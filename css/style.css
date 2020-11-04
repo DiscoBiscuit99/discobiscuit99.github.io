@@ -1,0 +1,26 @@
+body {
+    background: black;
+    color: white;
+    font-size: 13pt;
+}
+
+h1 {
+    text-align: center;
+}
+
+.quote {
+    width: 30em!important;
+}
+
+.div-block {
+    width: 50em;
+    margin: auto;
+}
+
+.seperator {
+    width: 40em;
+    height: .15em;
+    margin: auto;
+    background: gray;
+}
+
