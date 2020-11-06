@@ -119,3 +119,14 @@ td {
     text-align: center;
 }
 
+.favicon-to-come {
+    width: 50em;
+    height: 50em;
+    margin: auto;
+    color: transparent;
+    background: #f54242;
+    background: -webkit-linear-gradient(left, #e1f5c4, #ede574, #f9d423, #fc913a, #ff4e50);
+    background: -o-linear-gradient(left, #e1f5c4, #ede574, #f9d423, #fc913a, #ff4e50);
+    background: linear-gradient(left, #e1f5c4, #ede574, #f9d423, #fc913a, #ff4e50);
+}
+
