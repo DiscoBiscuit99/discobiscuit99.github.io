@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Differential Calculus I</title>
+</head>
+<body>
+    <h1>Differential I</h1>
+
+    <div class="seperator"></div>
+
+    <div class="div-block">
+        <p style="text-align: center">
+            The founding stuff regarding differential calculus.
+            <a href="../index.html">( ../ )</a>
+        </p>
+    </div>
+
+    <div class="div-block">
+        <h2>Differentiable functions</h2>
+
+        A given function can be differentiated only if: 
+
+        <ol>
+            <li>a tangent can be produced on the desired point of the function,</li>
+            <li>the function doesn't "reflect" off of any potentially constructed line,</li>
+            <li>the function doesn't jump.</li> 
+        </ol>
+
+
+        <h2>Method</h2>
+
+        <h3>I) The difference</h3>
+
+        \[\Delta y = f(x + \Delta x) - f(x)\]
+
+        <h3>II) The difference quotient (or rise over run)</h3>
+
+        \[\frac{\Delta y}{\Delta x} = \frac{f(x + \Delta x) - f(x)}{\Delta x}\]
+
+        <h3>III) The differential quotient</h3>
+
+        \[\lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{\Delta x} \Rightarrow \frac{\mathrm df(x)}{\mathrm dx} \Rightarrow f'(x)\]
+
+
+        <h2>The product rule</h2>
+
+        \[f(x) = g(x) \cdot h(x)\]
+        \[f'(x) =~?\]
+
+
+        <h3>I) The difference</h3>
+
+        \[\Delta y = g(x + \Delta x) \cdot h(x + \Delta x) - g(x) \cdot h(x)\]
+
+
+        <h3>II) The difference quotient (or rise over run)</h3>
+
+        \[\frac{\Delta y}{\Delta x} = \frac{g(x + \Delta x) \cdot h(x + \Delta x) - g(x) \cdot h(x)}{\Delta x}\]
+
+        <p>Add a complicated zero: \(g(x) \cdot h(x + \Delta x) - g(x) \cdot h(x + \Delta x)\)</p> 
+
+        \[\frac{\Delta y}{\Delta x} = \frac{g(x + \Delta x) \cdot h(x + \Delta x) - g(x) \cdot h(x) + g(x) \cdot h(x + \Delta x) - g(x) \cdot h(x + \Delta x)}{\Delta x}\]
+
+        \[\frac{\Delta y}{\Delta x} = \frac{[g(x + \Delta x) - g(x)] \cdot h(x + \Delta x) + g(x) \cdot [h(x + \Delta x) - h(x)]}{\Delta x}\]
+
+        
+        <h3>I) The difference</h3>
+
+        \[\lim_{\Delta x \to 0} \frac{g(x + \Delta x) - g(x)}{\Delta x} \cdot \lim_{\Delta x \to 0} h(x + \Delta x) + \lim_{\Delta x \to 0} g(x) \cdot \lim_{\Delta x \to 0} \frac{h(x + \Delta x) - h(x)}{\Delta x}\]
+
+        \[\frac{\mathrm dy}{\mathrm dx} = \frac{\mathrm dg(x)}{\mathrm dx} \cdot h(x) + g(x) \cdot \frac{\mathrm dh(x)}{\mathrm dx}\]
+
+        <p>Or...</p>
+
+        \[f'(x) = g'(x) \cdot h(x) + g(x) \cdot h'(x)\]
+
+    </div>
+</body>
+</html>

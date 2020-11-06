@@ -1,4 +1,4 @@
-body {
+html, body {
     background: #1a1b1a;
     color: #ebe3d5;
     font-size: 13pt;
@@ -6,10 +6,23 @@ body {
 
 h1 {
     text-align: center;
+    margin-top: 1em;
 }
 
 a {
     color: #4a60a3;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    margin: auto;
+}
+
+td {
+    padding: 0.5em 1em 0.5em 1em;
 }
 
 .quote {
@@ -23,8 +36,30 @@ a {
 
 .seperator {
     width: 40em;
-    height: .15em;
+    height: 0.15em;
     margin: auto;
     background: gray;
+}
+
+.gradient {
+    height: 200px;
+    color: transparent;
+    background: #f54242;
+    background: -webkit-linear-gradient(left, #e1f5c4, #ede574, #f9d423, #fc913a, #ff4e50);
+    background: -o-linear-gradient(left, #e1f5c4, #ede574, #f9d423, #fc913a, #ff4e50);
+    background: linear-gradient(left, #e1f5c4, #ede574, #f9d423, #fc913a, #ff4e50);
+
+    /*background: -webkit-linear-gradient(left, #35bbca, #0191b4, #f8d90f, #d3dd18, #fe7a15);*/
+    /*background: -o-linear-gradient(left, #35bbca, #0191b4, #f8d90f, #d3dd18, #fe7a15);*/
+    /*background: linear-gradient(left, #35bbca, #0191b4, #f8d90f, #d3dd18, #fe7a15);*/
+    
+    /*background: -webkit-linear-gradient(left, #f8b195, #f67280, #c06c84, #6c5b7b, #355c7d);*/
+    /*background: -o-linear-gradient(right, #f8b195, #f67280, #c06c84, #6c5b7b, #355c7d);*/
+    /*background: linear-gradient(to right, #f8b195, #f67280, #c06c84, #6c5b7b, #355c7d);*/
+
+    /*background: -webkit-linear-gradient(left, orange, yellow, cyan);*/
+    /*background: -o-linear-gradient(right, orange, yellow, cyan);*/
+    /*background: linear-gradient(to right, orange, yellow, cyan);*/
+    background-clip: text;
 }
 
