@@ -8,123 +8,133 @@
     <title>Calculus Cheat Sheet</title>
 </head>
 <body>
-    <h1>Calculus Cheat Sheet</h1>
+    <div class="container">
+        <div class="gradient-box"></div>
 
-    <div class="seperator"></div>
+        <h1>Calculus Cheat Sheet</h1>
 
-    <div class="div-block">
-        <p style="text-align: center">
-            This page functions kinda like a cheat sheet I guess.
-            <a href="../index.html">( ../ )</a>
-        </p>
+        <div class="seperator"></div>
+
+        <div class="div-block">
+            <p style="text-align: center">
+                This page functions kinda like a cheat sheet I guess.
+                <a href="../index.html">( ../ )</a>
+            </p>
+        </div>
+
+        <div class="div-block" style="width: 40em">
+            <h2>Differentials</h2>
+
+            <p>A bunch of differentials to aid the sloppy memory.</p>
+
+            <table>
+                <tr>
+                    <td><b>Function \(f(x)\)</b></td>
+                    <td><b>Differential Quotient \(f'(x)\))</b></td>
+                </tr>
+                <tr>
+                    <td>\(a\)</td>
+                    <td>\(0\)</td>
+                </tr>
+                <tr>
+                    <td>\(a \cdot x^n\)</td>
+                    <td>\(a \cdot n x^{n-1}\)</td>
+                </tr>
+                <tr>
+                    <td>\(a^x\)</td>
+                    <td>\(a^x \cdot ln|a|\)</td>
+                </tr>
+                <tr>
+                    <td>\(e^x\)</td>
+                    <td>\(e^x\)</td>
+                </tr>
+                <tr>
+                    <td>\(e^{k \cdot x}\)</td>
+                    <td>\(k \cdot e^{k \cdot x}\)</td>
+                </tr>
+                <tr>
+                    <td>\(g(x) \pm h(x)\)</td>
+                    <td>\(g'(x) \pm h'(x)\)</td>
+                </tr>
+                <tr>
+                    <td>\(g(x) \cdot h(x)\)</td>
+                    <td>\(g'(x) \cdot h(x) + g(x) \cdot h'(x)\)</td>
+                </tr>
+                <tr>
+                    <td>\(\frac{g(x)}{h(x)}\)</td>
+                    <td>\(\frac{g'(x) \cdot h(x) - g(x) \cdot h'(x)}{h(x)^2}\)</td>
+                </tr>
+                <tr>
+                    <td>\(g(h(x))\)</td>
+                    <td>\(g'(h(x)) \cdot h'(x)\)</td>
+                </tr>
+                <tr>
+                    <td>\(g(x)^{-1}\)</td>
+                    <td>\(-\frac{g'(x)}{g(x)^2}\)</td>
+                </tr>
+            </table>
+
+            <h2>Integrals</h2>
+
+            <p>A bunch of indefinite integrals to counteract forgettening.</p>
+
+            <table>
+                <tr>
+                    <td><b>Function \(f(x)\)</b></td>
+                    <td><b>Integral (indefinite) \(F(x)\)</b></td>
+                </tr>
+                <tr>
+                    <td>\(a\)</b></td>
+                    <td>\(a \cdot x + k\)</td>
+                </tr>
+                <tr>
+                    <td>\(a^n\)</b></td>
+                    <td>\(\frac{a^{n+1}}{n+1} + k\)</td>
+                </tr>
+                <tr>
+                    <td>\(e^x\)</b></td>
+                    <td>\(e^x + k\)</td>
+                </tr>
+                <tr>
+                    <td>\(x^{-1}\)</b></td>
+                    <td>\(ln|x| + k\)</td>
+                </tr>
+                <tr>
+                    <td>\(x^{-\frac{1}{2}}\)</b></td>
+                    <td>\(2\sqrt{x} + k\)</td>
+                </tr>
+                <tr>
+                    <td>\(ln|x|\)</b></td>
+                    <td>\(x \cdot ln|x| - x + k\)</td>
+                </tr>
+                <tr>
+                    <td>\(log|x|\)</b></td>
+                    <td>\(x \cdot log|x| - x + k\)</td>
+                </tr>
+                <tr>
+                    <td>\(sin(x)\)</b></td>
+                    <td>\(-cos(x) + k\)</td>
+                </tr>
+                <tr>
+                    <td>\(cos(x)\)</b></td>
+                    <td>\(sin(x) + k\)</td>
+                </tr>
+                <tr>
+                    <td>\(tan(x)\)</b></td>
+                    <td>\(-ln|cos(x)| + k\)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0 1em 0 1em">\(g(x) \cdot h(x)\)</b></td>
+                    <td style="padding: 0 1em 0 1em">\[G(x) \cdot h(x) - \int G(x) \cdot h'(x)~\mathrm dx + k\]</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="gradient-box pagestop"></div>
     </div>
 
-    <div class="div-block" style="width: 35em">
-        <h2>Differentials</h2>
-
-        <p>A bunch of differentials to aid the sloppy memory.</p>
-
-        <table>
-            <tr>
-                <td><b>Function \(f(x)\)</b></td>
-                <td><b>Differential Quotient \(f'(x)\))</b></td>
-            </tr>
-            <tr>
-                <td>\(a\)</td>
-                <td>\(0\)</td>
-            </tr>
-            <tr>
-                <td>\(a \cdot x^n\)</td>
-                <td>\(a \cdot n x^{n-1}\)</td>
-            </tr>
-            <tr>
-                <td>\(a^x\)</td>
-                <td>\(a^x \cdot ln|a|\)</td>
-            </tr>
-            <tr>
-                <td>\(e^x\)</td>
-                <td>\(e^x\)</td>
-            </tr>
-            <tr>
-                <td>\(e^{k \cdot x}\)</td>
-                <td>\(k \cdot e^{k \cdot x}\)</td>
-            </tr>
-            <tr>
-                <td>\(g(x) \pm h(x)\)</td>
-                <td>\(g'(x) \pm h'(x)\)</td>
-            </tr>
-            <tr>
-                <td>\(g(x) \cdot h(x)\)</td>
-                <td>\(g'(x) \cdot h(x) + g(x) \cdot h'(x)\)</td>
-            </tr>
-            <tr>
-                <td>\(\frac{g(x)}{h(x)}\)</td>
-                <td>\(\frac{g'(x) \cdot h(x) - g(x) \cdot h'(x)}{h(x)^2}\)</td>
-            </tr>
-            <tr>
-                <td>\(g(h(x))\)</td>
-                <td>\(g'(h(x)) \cdot h'(x)\)</td>
-            </tr>
-            <tr>
-                <td>\(g(x)^{-1}\)</td>
-                <td>\(-\frac{g'(x)}{g(x)^2}\)</td>
-            </tr>
-        </table>
-
-        <h2>Integrals</h2>
-
-        <p>A bunch of indefinite integrals to counteract forgettening.</p>
-
-        <table>
-            <tr>
-                <td><b>Function \(f(x)\)</b></td>
-                <td><b>Integral (indefinite) \(F(x)\)</b></td>
-            </tr>
-            <tr>
-                <td>\(a\)</b></td>
-                <td>\(a \cdot x + k\)</td>
-            </tr>
-            <tr>
-                <td>\(a^n\)</b></td>
-                <td>\(\frac{a^{n+1}}{n+1} + k\)</td>
-            </tr>
-            <tr>
-                <td>\(e^x\)</b></td>
-                <td>\(e^x + k\)</td>
-            </tr>
-            <tr>
-                <td>\(x^{-1}\)</b></td>
-                <td>\(ln|x| + k\)</td>
-            </tr>
-            <tr>
-                <td>\(x^{-\frac{1}{2}}\)</b></td>
-                <td>\(2\sqrt{x} + k\)</td>
-            </tr>
-            <tr>
-                <td>\(ln|x|\)</b></td>
-                <td>\(x \cdot ln|x| - x + k\)</td>
-            </tr>
-            <tr>
-                <td>\(log|x|\)</b></td>
-                <td>\(x \cdot log|x| - x + k\)</td>
-            </tr>
-            <tr>
-                <td>\(sin(x)\)</b></td>
-                <td>\(-cos(x) + k\)</td>
-            </tr>
-            <tr>
-                <td>\(cos(x)\)</b></td>
-                <td>\(sin(x) + k\)</td>
-            </tr>
-            <tr>
-                <td>\(tan(x)\)</b></td>
-                <td>\(-ln|cos(x)| + k\)</td>
-            </tr>
-            <tr>
-                <td style="padding: 0 1em 0 1em">\(g(x) \cdot h(x)\)</b></td>
-                <td style="padding: 0 1em 0 1em">\[G(x) \cdot h(x) - \int G(x) \cdot h'(x)~\mathrm dx + k\]</td>
-            </tr>
-        </table>
+    <div class="div-block footer">
+        <p>Valdemar Høgsvig Lorenzen</p>
     </div>
 </body>
 </html>

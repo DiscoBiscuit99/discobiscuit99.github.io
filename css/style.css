@@ -1,3 +1,23 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #202020; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #272727; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 html, body {
     background: #1a1b1a;
     color: #ebe3d5;
@@ -30,8 +50,20 @@ td {
 }
 
 .div-block {
-    width: 50em;
+    width: 55em;
     margin: auto;
+    padding: 0 1em 0 1em;
+}
+
+.container {
+    width: 58em;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-bottom: 0.25em;
+    -moz-box-shadow: 0 0 10px 5px #131313;
+    -webkit-box-shadow: 0 0 10px 5px #131313;
+    box-shadow: 0 0 10px 5px #131313;
 }
 
 .seperator {
@@ -64,5 +96,26 @@ td {
     -moz-background-clip: text;
     -o-background-clip: text;
     background-clip: text;
+}
+
+.gradient-box {
+    height: 5em;
+    margin: auto;
+    color: transparent;
+    background: #f54242;
+    background: -webkit-linear-gradient(left, #e1f5c4, #ede574, #f9d423, #fc913a, #ff4e50);
+    background: -o-linear-gradient(left, #e1f5c4, #ede574, #f9d423, #fc913a, #ff4e50);
+    background: linear-gradient(left, #e1f5c4, #ede574, #f9d423, #fc913a, #ff4e50);
+}
+
+.pagestop {
+    height: 0.1em;
+    margin-top: 2em;
+}
+
+.footer {
+    margin-bottom: 2em;
+    color: gray;
+    text-align: center;
 }
 
