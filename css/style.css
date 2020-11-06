@@ -69,6 +69,12 @@ td {
     box-shadow: 0 0 10px 8px #131313;
 }
 
+.grid-container {
+    display: grid; 
+    grid-template-columns: auto auto auto; 
+    justify-items: center;
+}
+
 .seperator {
     width: 40em;
     height: 0.15em;
@@ -102,7 +108,8 @@ td {
 }
 
 .gradient-box {
-    height: 5em;
+    /*height: 5em;*/
+    height: 0.1em;
     margin: auto;
     color: transparent;
     background: #f54242;
@@ -131,5 +138,13 @@ td {
     background: -webkit-linear-gradient(left, #e1f5c4, #ede574, #f9d423, #fc913a, #ff4e50);
     background: -o-linear-gradient(left, #e1f5c4, #ede574, #f9d423, #fc913a, #ff4e50);
     background: linear-gradient(left, #e1f5c4, #ede574, #f9d423, #fc913a, #ff4e50);
+}
+
+#contact-info {
+    margin: auto;
+    margin-bottom: 1.5em; 
+    border: 2px solid gray; 
+    width: 18em; 
+    padding: 0.5em;
 }
 
