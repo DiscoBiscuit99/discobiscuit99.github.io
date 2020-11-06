@@ -77,7 +77,7 @@ td {
 }
 
 .gradient {
-    height: 200px;
+    height: 15em;
     color: transparent;
     background: #f54242;
     background: -webkit-linear-gradient(left, #e1f5c4, #ede574, #f9d423, #fc913a, #ff4e50);
