@@ -18,7 +18,7 @@
 
         <div class="div-block">
             <p style="text-align: center">
-                The foundational stuff regarding differential calculus.
+                Foundational stuff regarding differential calculus.
                 <a href="../index.html">( ../ )</a>
             </p>
         </div>
@@ -61,18 +61,18 @@
             \[\Delta y = g(x + \Delta x) \cdot h(x + \Delta x) - g(x) \cdot h(x)\]
 
 
-            <h3>II) The difference quotient (or rise over run)</h3>
+            <h3>II) The difference quotient</h3>
 
             \[\frac{\Delta y}{\Delta x} = \frac{g(x + \Delta x) \cdot h(x + \Delta x) - g(x) \cdot h(x)}{\Delta x}\]
 
-            <p>Add a complicated zero: \(g(x) \cdot h(x + \Delta x) - g(x) \cdot h(x + \Delta x)\)</p> 
+            <p>Add a complicated zero: \(g(x) \cdot h(x + \Delta x) - g(x) \cdot h(x + \Delta x) = 0\)</p> 
 
             \[\frac{\Delta y}{\Delta x} = \frac{g(x + \Delta x) \cdot h(x + \Delta x) - g(x) \cdot h(x) + g(x) \cdot h(x + \Delta x) - g(x) \cdot h(x + \Delta x)}{\Delta x}\]
 
             \[\frac{\Delta y}{\Delta x} = \frac{[g(x + \Delta x) - g(x)] \cdot h(x + \Delta x) + g(x) \cdot [h(x + \Delta x) - h(x)]}{\Delta x}\]
 
             
-            <h3>I) The difference</h3>
+            <h3>III) The differential quotient</h3>
 
             \[\lim_{\Delta x \to 0} \frac{g(x + \Delta x) - g(x)}{\Delta x} \cdot \lim_{\Delta x \to 0} h(x + \Delta x) + \lim_{\Delta x \to 0} g(x) \cdot \lim_{\Delta x \to 0} \frac{h(x + \Delta x) - h(x)}{\Delta x}\]
 
@@ -80,8 +80,46 @@
 
             <p>Or...</p>
 
-            \[f'(x) = g'(x) \cdot h(x) + g(x) \cdot h'(x)\]
+            <div class="answer">
+                \[f'(x) = g'(x) \cdot h(x) + g(x) \cdot h'(x)\]
+            </div>
 
+
+            <h2>The quotient rule</h2>
+
+            \[f(x) = \frac{g(x)}{h(x)}\]
+            \[f'(x) =~?\]
+
+
+            <h3>I) The difference</h3>
+
+            \[\Delta y = \frac{g(x + \Delta x)}{h(x + \Delta x)} - \frac{g(x)}{h(x)}\]
+            \[\Delta y = \frac{g(x + \Delta x) \cdot h(x) - g(x) \cdot h(x + \Delta x)}{h(x + \Delta x) \cdot h(x)}\]
+
+
+            <h3>II) The difference quotient</h3>
+
+            \[\frac{\Delta y}{\Delta x} = \frac{g(x + \Delta x) \cdot h(x) - g(x) \cdot h(x + \Delta x)}{h(x + \Delta x) \cdot h(x) \cdot \Delta x}\]
+
+            \[\frac{\Delta y}{\Delta x} = \frac{1}{h(x + \Delta x) \cdot h(x)} \cdot \left( \frac{g(x + \Delta x) \cdot h(x) - g(x) \cdot h(x + \Delta x)}{\Delta x} \right)\]
+
+            Throw a complicated zero into the equation: \(g(x) \cdot h(x) - g(x) \cdot h(x) = 0\)
+
+            \[\frac{\Delta y}{\Delta x} = \frac{1}{h(x + \Delta x) \cdot h(x)} \cdot \left( \frac{g(x + \Delta x) \cdot h(x) - g(x) \cdot h(x + \Delta x) + g(x) \cdot h(x) - g(x) \cdot h(x)}{\Delta x} \right)\]
+
+            \[\frac{\Delta y}{\Delta x} = \frac{1}{h(x + \Delta x) \cdot h(x)} \cdot \left( \frac{g(x + \Delta x) \cdot h(x) - g(x) \cdot h(x) - [g(x) \cdot h(x + \Delta x) - g(x) \cdot h(x)]}{\Delta x} \right)\]
+
+            \[\frac{\Delta y}{\Delta x} = \frac{1}{h(x + \Delta x) \cdot h(x)} \cdot \left( h(x) \cdot \frac{g(x + \Delta x) - g(x)}{\Delta x} - g(x) \cdot \frac{h(x + \Delta x) - h(x)}{\Delta x} \right)\]
+
+            <h3>III) The differential quotient</h3>
+
+            \[\lim_{\Delta x \to 0} \frac{1}{h(x + \Delta x) \cdot h(x)} \cdot \left( h(x) \cdot \frac{g(x + \Delta x) - g(x)}{\Delta x} - g(x) \cdot \frac{h(x + \Delta x) - h(x)}{\Delta x} \right)\]
+
+            \[f'(x) = \frac{1}{h(x)^2} \cdot [g'(x) \cdot h(x) - g(x) \cdot h'(x)]\]
+
+            <div class="answer">
+                \[f'(x) = \frac{g'(x) \cdot h(x) - g(x) \cdot h'(x)}{h(x)^2}\]
+            </div>
         </div>
 
         <div class="gradient-box pagestop"></div>

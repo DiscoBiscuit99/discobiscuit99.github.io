@@ -32,6 +32,13 @@ h1 {
     margin-top: 1em;
 }
 
+h2 {
+    /*text-align: center;*/
+    /*color: #4a60a3;*/
+    color: #5769a1;
+    margin-top: 1.5em;
+}
+
 a {
     color: #4a60a3;
 }
@@ -138,6 +145,12 @@ td {
     background: -webkit-linear-gradient(left, #e1f5c4, #ede574, #f9d423, #fc913a, #ff4e50);
     background: -o-linear-gradient(left, #e1f5c4, #ede574, #f9d423, #fc913a, #ff4e50);
     background: linear-gradient(left, #e1f5c4, #ede574, #f9d423, #fc913a, #ff4e50);
+}
+
+.answer {
+    border: 2px solid yellow; 
+    width: 30%; 
+    margin: auto;
 }
 
 #contact-info {
