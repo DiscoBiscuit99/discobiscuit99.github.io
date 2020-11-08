@@ -23,7 +23,8 @@
 html, body {
     background: #1a1b1a;
     color: #ebe3d5;
-    font-family: Times New Roman;
+    font-family: Times New Roman, Arial;
+    /*font-family: Arial;*/
     font-size: 13pt;
 }
 
@@ -148,9 +149,10 @@ td {
 }
 
 .answer {
-    border: 2px solid yellow; 
-    width: 30%; 
-    margin: auto;
+    /*border: 2px solid yellow; */
+    /*border: 2px solid #ffe46b;*/
+    border: 2px solid #ffe159;
+    margin: 1em;
 }
 
 #contact-info {
