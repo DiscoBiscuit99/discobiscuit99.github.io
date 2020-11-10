@@ -138,14 +138,41 @@ td {
 }
 
 .favicon-to-come {
-    width: 50em;
-    height: 50em;
+    width: 99vw;
+    height: 98vh;
     margin: auto;
     color: transparent;
     background: #f54242;
-    background: -webkit-linear-gradient(left, #e1f5c4, #ede574, #f9d423, #fc913a, #ff4e50);
-    background: -o-linear-gradient(left, #e1f5c4, #ede574, #f9d423, #fc913a, #ff4e50);
-    background: linear-gradient(left, #e1f5c4, #ede574, #f9d423, #fc913a, #ff4e50);
+    /*background: -webkit-linear-gradient(left, #e1f5c4, #ede574, #f9d423, #fc913a, #ff4e50);*/
+    /*background:      -o-linear-gradient(left, #e1f5c4, #ede574, #f9d423, #fc913a, #ff4e50);*/
+    /*background:         linear-gradient(left, #e1f5c4, #ede574, #f9d423, #fc913a, #ff4e50);*/
+    /*background: -webkit-linear-gradient(left, #dc8665, #138086, #534666, #cd7672, #eeb462);*/
+    /*background:      -o-linear-gradient(left, #dc8665, #138086, #534666, #cd7672, #eeb462);*/
+    /*background:         linear-gradient(left, #dc8665, #138086, #534666, #cd7672, #eeb462);*/
+    /*background: -webkit-linear-gradient(left, #ff7b89, #8a5082, #6f5f90, #758eb7, #a5cad2);*/
+    /*background:      -o-linear-gradient(left, #ff7b89, #8a5082, #6f5f90, #758eb7, #a5cad2);*/
+    /*background:         linear-gradient(left, #ff7b89, #8a5082, #6f5f90, #758eb7, #a5cad2);*/
+    /*background: -webkit-linear-gradient(left, #df825f, #f8956f, #dfb15b, #4d446f, #706695);*/
+    /*background:      -o-linear-gradient(left, #df825f, #f8956f, #dfb15b, #4d446f, #706695);*/
+    /*background:         linear-gradient(left, #df825f, #f8956f, #dfb15b, #4d446f, #706695);*/
+    /*background: -webkit-linear-gradient(left, #264d59, #43978d, #f9e07f, #f9ad6a, #d46c4e);*/
+    /*background:      -o-linear-gradient(left, #264d59, #43978d, #f9e07f, #f9ad6a, #d46c4e);*/
+    /*background:         linear-gradient(left, #264d59, #43978d, #f9e07f, #f9ad6a, #d46c4e);*/
+    /*background: -webkit-linear-gradient(right, #c73866, #fe676e, #fd8f52, #ffbd71, #ffdca2);*/
+    /*background:      -o-linear-gradient(right, #c73866, #fe676e, #fd8f52, #ffbd71, #ffdca2);*/
+    /*background:         linear-gradient(right, #c73866, #fe676e, #fd8f52, #ffbd71, #ffdca2);*/
+    /*background: -webkit-linear-gradient(right, #7e9680, #79616f, #ae6378, #d87f81, #eab595);*/
+    /*background:      -o-linear-gradient(right, #7e9680, #79616f, #ae6378, #d87f81, #eab595);*/
+    /*background:         linear-gradient(right, #7e9680, #79616f, #ae6378, #d87f81, #eab595);*/
+    /*background: -webkit-linear-gradient(right, #478ba2, #de5b6d, #e9765b, #f2a490, #b9d4db);*/
+    /*background:      -o-linear-gradient(right, #478ba2, #de5b6d, #e9765b, #f2a490, #b9d4db);*/
+    /*background:         linear-gradient(right, #478ba2, #de5b6d, #e9765b, #f2a490, #b9d4db);*/
+    /*background: -webkit-linear-gradient(right, #f5cec7, #e79796, #ffc98b, #ffb284, #c6c09c);*/
+    /*background:      -o-linear-gradient(right, #f5cec7, #e79796, #ffc98b, #ffb284, #c6c09c);*/
+    /*background:         linear-gradient(right, #f5cec7, #e79796, #ffc98b, #ffb284, #c6c09c);*/
+    background: -webkit-linear-gradient(left, #f8b195, #f67280, #c06c84, #6c5b7b, #355c7d);
+    background:      -o-linear-gradient(left, #f8b195, #f67280, #c06c84, #6c5b7b, #355c7d);
+    background:         linear-gradient(left, #f8b195, #f67280, #c06c84, #6c5b7b, #355c7d);
 }
 
 .answer {
