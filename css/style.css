@@ -56,6 +56,16 @@ td {
     padding: 0.5em 1em 0.5em 1em;
 }
 
+code {
+    /*background: #1a1b1a;*/
+    color: #eb5e5e;
+    font-size: 11pt;
+    border-radius: 1.5pt;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    padding-bottom: 0.2em;
+}
+
 .quote {
     width: 30em!important;
     color: #ffe4b3;
