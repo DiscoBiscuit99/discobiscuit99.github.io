@@ -55,6 +55,7 @@ html, body {
     font-family: Times New Roman, Arial;
     /*font-family: Arial;*/
     font-size: 13pt;
+	text-align: justify;
 }
 
 h1 {
@@ -98,6 +99,8 @@ code {
 .quote {
 	width: 90%;
 	margin: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
     color: #ffe4b3;
 	text-align: center;
 }
