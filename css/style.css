@@ -132,6 +132,14 @@ code {
     box-shadow: 0 0 10px 8px #131313;
 }
 
+.frontpage h2 {
+	text-align: center;
+}
+
+.frontpage h3 {
+	/*text-align: center;*/
+}
+
 .frontpage .div-block {
 	max-width: 53em;
 }
