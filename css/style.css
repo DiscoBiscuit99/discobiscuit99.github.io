@@ -19,6 +19,35 @@
   background: #555; 
 }
 
+/*Selection / Highlight*/
+/*** Works on common browsers ***/
+::selection {
+	background-color: #ebe3d5;
+	color: #1a1b1a;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+	background-color: #ebe3d5;
+	color: #1a1b1a;
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+	background-color: #ebe3d5;
+	color: #1a1b1a;
+}
+
+::-ms-selection {
+	background-color: #ebe3d5;
+	color: #1a1b1a;
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+	background-color: #ebe3d5;
+	color: #1a1b1a;
+}
 
 html, body {
     background: #1a1b1a;
