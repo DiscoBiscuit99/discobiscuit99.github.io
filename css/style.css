@@ -132,6 +132,10 @@ code {
     box-shadow: 0 0 10px 8px #131313;
 }
 
+.frontpage .div-block {
+	max-width: 53em;
+}
+
 .math .div-block {
 	max-width: 50em;
 }
@@ -247,7 +251,6 @@ code {
 	width: 90%;
     max-width: 22.55em; 
     margin: auto;
-    margin-bottom: 1.5em; 
     border: 2px solid gray; 
     padding: 0.5em;
 }
