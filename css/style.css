@@ -67,18 +67,21 @@ code {
 }
 
 .quote {
-    width: 30em!important;
+	width: 100%;
+	margin: auto;
+    /*min-width: 30em!important;*/
     color: #ffe4b3;
 }
 
 .div-block {
-    width: 55em;
+    /*width: 55em;*/
     margin: auto;
-    padding: 0 1em 0 1em;
+    padding: 0 1.5em 0 1.5em;
 }
 
 .container {
-    width: 58em;
+	width: 98%;
+    max-width: 58em;
     margin: auto;
     margin-top: 2em;
     margin-bottom: 2em;
@@ -95,7 +98,8 @@ code {
 }
 
 .seperator {
-    width: 40em;
+	width: 75%;
+    max-width: 40em;
     height: 0.15em;
     margin: auto;
     background: gray;
