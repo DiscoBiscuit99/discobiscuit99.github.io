@@ -52,7 +52,7 @@
 html, body {
     background: #1a1b1a;
     color: #ebe3d5;
-    font-family: Times New Roman, Arial;
+	font-family: monospace, Times New Roman, Arial;
     /*font-family: Arial;*/
     font-size: 13pt;
 	text-align: justify;
@@ -231,11 +231,11 @@ code {
 }
 
 #contact-info {
+	width: 90%;
+    max-width: 22.55em; 
     margin: auto;
     margin-bottom: 1.5em; 
     border: 2px solid gray; 
-	width: 90%;
-    max-width: 18em; 
     padding: 0.5em;
 }
 
