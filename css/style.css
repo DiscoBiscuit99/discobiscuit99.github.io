@@ -170,7 +170,7 @@ code {
 }
 
 .gradient {
-    max-width: 9em;
+	display: inline-block; /* Make the div snap to it's content. */
     margin: auto;
     color: transparent;
     background: #f54242;
