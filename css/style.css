@@ -54,7 +54,7 @@ html, body {
     color: #ebe3d5;
 	font-family: monospace, Times New Roman, Arial;
     /*font-family: Arial;*/
-    font-size: 13pt;
+    font-size: 12pt;
 	text-align: justify;
 }
 
@@ -222,6 +222,7 @@ code {
     margin-bottom: 2em;
     color: gray;
     text-align: center;
+    font-size: 12pt;
 }
 
 .favicon-to-come {
