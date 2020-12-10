@@ -52,7 +52,7 @@
 html, body {
     background: #1a1b1a;
     color: #ebe3d5;
-	font-family: monospace, Times New Roman, Arial;
+	font-family: Noto Sans Mono, monospace, Times New Roman, Arial;
     /*font-family: Arial;*/
     font-size: 12pt;
 	text-align: justify;
