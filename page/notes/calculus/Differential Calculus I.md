@@ -1,4 +1,4 @@
-[#](#) Differential Calculus I
+# Differential Calculus I
 
 ---
 
