@@ -1,0 +1,64 @@
+#!/usr/bin/env ruby
+
+require "rdiscount"
+require "pathname"
+
+def gen_page
+  Dir["**/*.md"].each do |file| 
+    pre = gen_pre(file) # Get the file name without the extension
+    content = compile(File.read(file))
+    post = gen_post 
+    full_html = pre << content << post 
+    File.write(new_file(file), full_html)
+    puts "... HTML generated for " << "`" << file << "`..."
+  end
+end
+
+def compile(content)
+  RDiscount.new(content, :smart, :footnotes).to_html
+end
+
+def new_file(file)
+  file.sub(/\.md$/, ".html")
+end
+
+def gen_pre(file)
+  title = File.basename(file, File.extname(file))
+  path = file.split(/\//)
+  rel_to = "../" * (path.length - 1)
+  %Q(<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+<link rel="browser tab icon" href="#{rel_to}icons/favicon.ico" type="image/x-icon"/>
+
+<link rel="stylesheet" href="#{rel_to}css/style.css">
+<title>#{title}</title>
+</head>
+<body>
+<div class="container">
+<div class="gradient-seperator"></div>
+<div class="div-block"> 
+  )
+end
+
+def gen_post
+  %Q(
+</div>
+<div class="gradient-seperator"></div>
+</div>
+<div class="footer">
+Valdemar Høgsvig Lorenzen &copy; 2020
+</div>
+</body>
+</html>
+  )
+end
+
+gen_page
