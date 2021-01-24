@@ -10,7 +10,7 @@ Pythagoras Theorem states that the relationship between the three sides \\( a \\
 
 \\[ a^{2} + b^{2} = c^{2} \\]
 
-![Geometric representation of Pythagoras Theorem](../../../imgs/notes/proofs/pythagoras.png "Geometric representation of Pythagoras Theorem")
+![Geometric representation of Pythagoras Theorem](imgs/pythagoras.png "Geometric representation of Pythagoras Theorem")
 
 _NOTE: Finish this_
 
