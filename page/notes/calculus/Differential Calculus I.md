@@ -383,7 +383,9 @@ cos(x) \cdot \frac{cos(\Delta x) - 1}{\Delta x} - sin(x) \cdot \frac{sin(\Delta 
 \lim\_{\Delta x \to 0} cos(x) \cdot 0 - \lim\_{\Delta x \to 0} sin(x) \cdot 1 \Rightarrow \lim\_{\Delta x \to 0} -sin(x)
 \\]
 
-\\[ f'(x) = -sin(x) \\]
+<div class="answer">
+\[ f'(x) = -sin(x) \]
+</div>
 
 ## Tangent
 
