@@ -126,7 +126,9 @@ Or...
 
 \\[ \frac{\mathrm df(g(x))}{\mathrm dx} = f'(g(x)) \cdot g'(x) \\]
 
-### The difference quotient
+We jump straight to the difference quotient.
+
+### II) The difference quotient
 
 \\[ \frac{g(x + \Delta x) - g(x)}{\Delta x} - g'(x) = v \\]
 
@@ -256,7 +258,7 @@ f(g(x + \Delta x)) - f(g(x)) =
 \\]
 
 
-### The differentail quotient
+### III) The derivative 
 
 \\[
 \lim\_{\Delta x \to 0} \left[
@@ -329,12 +331,12 @@ cos(x) \cdot \frac{sin(\Delta y)}{\Delta x} + sin(x) \cdot \frac{cos(\Delta x) -
 
 Given the function \\( f(x) = cos(x) \\), what is the derivative \\( f'(x) \\)?
 
-### The difference
+### I) The difference
 
 \\[ \Delta y = cos(x + \Delta x) - cos(x) \\]
 
 
-### The difference quotient
+### II) The difference quotient
 
 \\[
 \frac{\Delta y}{\Delta x} = 
@@ -361,7 +363,7 @@ Given the function \\( f(x) = cos(x) \\), what is the derivative \\( f'(x) \\)?
 cos(x) \cdot \frac{cos(\Delta x) - 1}{\Delta x} - sin(x) \cdot \frac{sin(\Delta x)}{\Delta x}
 \\]
 
-### The derivative
+### III) The derivative
 
 \\[
 \lim\_{\Delta x \to 0} \frac{\Delta y}{\Delta x} =
