@@ -3,7 +3,7 @@
 ---
 
 <center>
-<p>Foundational stuff regarding differential calculus. <a href="../../Home.html">(../)</a></p>
+<p>Foundational stuff regarding differential calculus. <a href="../../../Home.html">(../)</a></p>
 </center>
 
 ## Differentiable functions
@@ -61,6 +61,8 @@ Add a roundabout zero: \\( g(x) \cdot h(x + \Delta x) - g(x) \cdot h(x + \Delta 
 
 ### II) The difference quotient
 
+### III) The derivative
+
 \\[
 \lim\_{\Delta x \to 0} \frac{g(x + \Delta x) - g(x)}{\Delta x} \cdot
 \lim\_{\Delta x \to 0} h(x + \Delta x) + 
@@ -79,7 +81,6 @@ Or...
 \[ f'(x) = g'(x) \cdot h(x) + g(x) \cdot h'(x) \]
 </div> 
 
-### III) The derivative
 
 ## The quotient rule
 

@@ -3,7 +3,7 @@
 ---
 
 <center>
-<p>Pythagoras theorem for dummies. <a href="../../Home.html">(../)</a></p>
+<p>Pythagoras theorem for dummies. <a href="../../../Home.html">(../)</a></p>
 </center>
 
 Pythagoras Theorem states that the relationship between the three sides \\( a \\), \\( b \\), and \\( c \\) in a right-angled triangle is as follows:

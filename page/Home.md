@@ -40,7 +40,7 @@ Also, document procedures better.)
 <h3>Proofs</h3>
 <ul>
     <li>
-        <a href="notes/proofs/Pythagoras Theorem.html">Pythagoras Theorem</a>
+        <a href="notes/math/proofs/Pythagoras Theorem.html">Pythagoras Theorem</a>
     </li>
 </ul>
 </div>
@@ -48,13 +48,13 @@ Also, document procedures better.)
 <h3>Calculus</h3>
 <ul>
     <li>
-        <a href="notes/calculus/Cheat Sheet.html">Cheat Sheet</a>
+        <a href="notes/math/calculus/Cheat Sheet.html">Cheat Sheet</a>
     </li>
     <li>
-        <a href="notes/calculus/Differential Calculus I.html">Differential Calculus I</a>
+        <a href="notes/math/calculus/Differential Calculus I.html">Differential Calculus I</a>
     </li>
     <li>
-        <a href="notes/calculus/Differential Calculus II.html">Differential Calculus II</a>
+        <a href="notes/math/calculus/Differential Calculus II.html">Differential Calculus II</a>
     </li>
 </ul>
 </div>
@@ -62,12 +62,26 @@ Also, document procedures better.)
 <h3>Vectors</h3>
 <ul>
     <li>
-        <a href="notes/vectors/Vectors in General.html">Vectors in General</a>
+        <a href="notes/math/vectors/Vectors in General.html">Vectors in General</a>
     </li>
     <li>
-        <a href="notes/vectors/Vectors in Three Dimensions.html">Vectors in Three Dimensions</a>
+        <a href="notes/math/vectors/Vectors in Three Dimensions.html">Vectors in Three Dimensions</a>
     </li>
 </ul>
 </div>
 </div>
+
+## Notes on Traditional Chinese Medicine
+
+<div class="grid-container">
+<div>
+<h3>The Channels and Collaterals</h3>
+<ul>
+    <li>
+        <a href="notes/tcm/channels_collaterals/The Functions of the Channels.html">The Functions of the Channels</a>
+    </li>
+</ul>
+</div>
+</div>
+
 
