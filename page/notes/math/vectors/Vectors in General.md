@@ -3,7 +3,7 @@
 ---
 
 <center>
-<p>This page covers general things regarding vectors. <a href="../../../Home.html">(../)</a></p>
+<p>This page covers general things regarding vectors. <a href="../../../Home.html">(~/)</a></p>
 </center>
 
 ## The radius vector

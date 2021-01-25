@@ -72,11 +72,17 @@ h2 {
 ul {
     text-align: left;
     list-style-type: '» ';
+    margin-left: -0.5em;
 }
 
 a {
     color: #4a60a3;
+    text-decoration: none;
 }
+
+/*a:visited {*/
+    /*color: #5769a1;*/
+/*}*/
 
 hr { 
     width: 75%;
@@ -116,14 +122,23 @@ img {
     margin: auto;
 }
 
+pre {
+    width: 60%;
+    margin: auto;
+    padding: 1em;
+    color: #eb5e5e;
+    border: 2px dashed #343332;
+    box-shadow: 0 0 10px 0.125px #131313;
+    -moz-box-shadow: 0 0 10px 0.125px #131313;
+    -webkit-box-shadow: 0 0 10px 0.125px #131313;
+}
+
 :not(pre) > code {
     color: #eb5e5e;
     font-size: 11pt;
     border-radius: 1.5pt;
-    /*padding-left: 0.3em;*/
-    /*padding-right: 0.3em;*/
     padding-bottom: 0.2em;
-}
+} 
 
 .container {
     width: 98%;
@@ -167,7 +182,7 @@ img {
     padding-right: 2.5em;
     padding-top: 1em;
     padding-bottom: 1em;
-    border: 2px solid #555;
+    /*border: 2px solid #555;*/
 }
 
 .gradient { 
@@ -207,6 +222,8 @@ img {
 
 /*Overwrites styling for the generated footnotes.*/
 .footnotes {
-    color: green;
+    /*color: #d15555;*/
+    color: #eb5e5e;
+    font-size: 10pt;
 }
 

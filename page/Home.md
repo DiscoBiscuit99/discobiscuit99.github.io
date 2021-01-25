@@ -18,7 +18,7 @@ As of now, I don't know what this page will become in time; maybe a jumbled, spr
 We'll see. Below you'll find my contact information, since that looks professional. 
 Oh, and by the way, one can navigate the page using `[h|j|k|l]` for directional scrolling and `[g|G]` for going top and bottom if one so wishes; 
 much like vim if you're familiar. 
-If you find you like the controls, an addon for the firefox browser, made to work on all webpages, can be downloaded here: 
+If you find you like the controls, an addon for the firefox browser, made to work on all webpages, can be downloaded from here: 
 [Better Scrolling](https://addons.mozilla.org/en-US/firefox/addon/better-scrolling/). 
 
 <div class="contact-info">
@@ -69,6 +69,41 @@ Also, document procedures better.)
     </li>
 </ul>
 </div>
+<div>
+<h3>Analytic Geometry</h3>
+<ul>
+    <li>
+        <a href="notes/math/analytic_geometry/Functions.html">Functions</a>
+    </li>
+</ul>
+</div>
+</div>
+
+## Notes on Computer Science
+
+<div class="grid-container">
+<div>
+<h3>Programming</h3>
+<ul>
+    <li> 
+        <a href="notes/cs/programming/Programming Paradigms.html">Programming Paradigms</a> 
+    </li>
+    <li> 
+        <a href="notes/cs/programming/Logical Operations.html">Logical Operations</a> 
+    </li>
+</ul>
+</div>
+<div>
+<h3>Operating Systems</h3>
+<ul>
+    <li> 
+        <a href="notes/cs/os/The Kernel.html">The Kernel</a> 
+    </li>
+    <li> 
+        <a href="notes/cs/os/The Shell.html">The Shell</a> 
+    </li>
+</ul>
+</div>
 </div>
 
 ## Notes on Traditional Chinese Medicine
@@ -83,5 +118,4 @@ Also, document procedures better.)
 </ul>
 </div>
 </div>
-
 

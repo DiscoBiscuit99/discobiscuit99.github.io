@@ -3,7 +3,7 @@
 ---
 
 <center>
-<p>Foundational stuff regarding differential calculus. <a href="../../../Home.html">(../)</a></p>
+<p>Foundational stuff regarding differential calculus. <a href="../../../Home.html">(~/)</a></p>
 </center>
 
 ## Differentiable functions
@@ -16,31 +16,37 @@ Any given function can be differentiated if, and only if:
 
 ## The procedure
 
-### I) The difference
+### 1.) The difference
 
 \\[ \Delta y = f(x + \Delta x) - f(x) \\]
 
-### II) The difference quotient (or, the rise over run)
+### 2.) The difference quotient (or, the rise over run)
 
 \\[
 \frac{\Delta y}{\Delta x} = 
 \frac{f(x + \Delta x) - f(x)}{\Delta x} 
 \\]
 
-### III) The derivative
+### 3.) The derivative
 
-\\[
-\lim\_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = 
-\lim\_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{\Delta x} \Rightarrow 
+<div class="answer">
+\[
+\lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = 
+\lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{\Delta x} \Rightarrow 
 \frac{\mathrm df(x)}{\mathrm dx} \Rightarrow
 f'(x)
-\\]
+\]
+</div>
 
 ## The product rule
 
 Given the function \\( f(x) = g(x) \cdot h(x) \\), what is the derivative \\( f'(x) \\)?
 
-### I) The difference
+### 1.) The difference
+
+\\[ \Delta y = g(x + \Delta x) \cdot h(x + \Delta x) - g(x) \cdot h(x) \\]
+
+### 2.) The difference quotient
 
 \\[
 \frac{\Delta y}{\Delta x} =
@@ -51,7 +57,7 @@ Add a roundabout zero: \\( g(x) \cdot h(x + \Delta x) - g(x) \cdot h(x + \Delta 
 
 \\[
 \frac{\Delta y}{\Delta x} =
-\frac{g(x + \Delta x) \cdot h(x + \Delta x) - g(x) \cdot h(x) + g(x) \cdot h(x + \Delta x) - g(x) \cdot h(x + \Delta x)}{\Delta x}
+\frac{g(x + \Delta x) \cdot h(x + \Delta x) - g(x) \cdot h(x + \Delta x) + g(x) \cdot h(x + \Delta x) - g(x) \cdot h(x)}{\Delta x}
 \\]
 
 \\[
@@ -59,9 +65,7 @@ Add a roundabout zero: \\( g(x) \cdot h(x + \Delta x) - g(x) \cdot h(x + \Delta 
 \frac{[g(x + \Delta x) - g(x)] \cdot h(x + \Delta x) + g(x) \cdot [h(x + \Delta x) - h(x)]}{\Delta x}
 \\]
 
-### II) The difference quotient
-
-### III) The derivative
+### 3.) The derivative
 
 \\[
 \lim\_{\Delta x \to 0} \frac{g(x + \Delta x) - g(x)}{\Delta x} \cdot
@@ -87,13 +91,13 @@ Or...
 \\[f(x) = \frac{g(x)}{h(x)}\\]
 \\[f'(x) =~?\\]
 
-### I) The difference
+### 1.) The difference
 
 \\[\Delta y = \frac{g(x + \Delta x)}{h(x + \Delta x)} - \frac{g(x)}{h(x)}\\]
 \\[\Delta y = \frac{g(x + \Delta x) \cdot h(x) - g(x) \cdot h(x + \Delta x)}{h(x + \Delta x) \cdot h(x)}\\]
 
 
-### II) The difference quotient
+### 2.) The difference quotient
 
 \\[\frac{\Delta y}{\Delta x} = \frac{g(x + \Delta x) \cdot h(x) - g(x) \cdot h(x + \Delta x)}{h(x + \Delta x) \cdot h(x) \cdot \Delta x}\\]
 
@@ -107,7 +111,7 @@ Throw a complicated zero into the equation: \\( g(x) \cdot h(x) - g(x) \cdot h(x
 
 \\[\frac{\Delta y}{\Delta x} = \frac{1}{h(x + \Delta x) \cdot h(x)} \cdot \left( h(x) \cdot \frac{g(x + \Delta x) - g(x)}{\Delta x} - g(x) \cdot \frac{h(x + \Delta x) - h(x)}{\Delta x} \right)\\]
 
-### III) The derivative
+### 3.) The derivative
 
 \\[\lim_{\Delta x \to 0} \frac{1}{h(x + \Delta x) \cdot h(x)} \cdot \left( h(x) \cdot \frac{g(x + \Delta x) - g(x)}{\Delta x} - g(x) \cdot \frac{h(x + \Delta x) - h(x)}{\Delta x} \right)\\]
 
@@ -129,7 +133,7 @@ Or...
 
 We jump straight to the difference quotient.
 
-### II) The difference quotient
+### 2.) The difference quotient
 
 \\[ \frac{g(x + \Delta x) - g(x)}{\Delta x} - g'(x) = v \\]
 
@@ -259,7 +263,7 @@ f(g(x + \Delta x)) - f(g(x)) =
 \\]
 
 
-### III) The derivative 
+### 3.) The derivative 
 
 \\[
 \lim\_{\Delta x \to 0} \left[
@@ -281,13 +285,13 @@ f(g(x + \Delta x)) - f(g(x)) =
 \\[f(x) = sin(x)\\]
 \\[f'(x) =~?\\]
 
-### I) The difference
+### 1.) The difference
 
 \\[\Delta y = sin(x + \Delta x) - sin(x)\\]
 \\[\Delta y = sin(x) \cdot cos(\Delta x) + cos(x) \cdot sin(\Delta x) - sin(x)\\]
 
 
-### II) The difference quotient
+### 2.) The difference quotient
 
 \\[
 \frac{\Delta y}{\Delta x} = 
@@ -309,7 +313,7 @@ f(g(x + \Delta x)) - f(g(x)) =
 cos(x) \cdot \frac{sin(\Delta y)}{\Delta x} + sin(x) \cdot \frac{cos(\Delta x) - 1}{\Delta x}
 \\]
 
-### III) The derivative
+### 3.) The derivative
 
 \\[
 \lim\_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = 
@@ -332,12 +336,12 @@ cos(x) \cdot \frac{sin(\Delta y)}{\Delta x} + sin(x) \cdot \frac{cos(\Delta x) -
 
 Given the function \\( f(x) = cos(x) \\), what is the derivative \\( f'(x) \\)?
 
-### I) The difference
+### 1.) The difference
 
 \\[ \Delta y = cos(x + \Delta x) - cos(x) \\]
 
 
-### II) The difference quotient
+### 2.) The difference quotient
 
 \\[
 \frac{\Delta y}{\Delta x} = 
@@ -364,7 +368,7 @@ Given the function \\( f(x) = cos(x) \\), what is the derivative \\( f'(x) \\)?
 cos(x) \cdot \frac{cos(\Delta x) - 1}{\Delta x} - sin(x) \cdot \frac{sin(\Delta x)}{\Delta x}
 \\]
 
-### III) The derivative
+### 3.) The derivative
 
 \\[
 \lim\_{\Delta x \to 0} \frac{\Delta y}{\Delta x} =

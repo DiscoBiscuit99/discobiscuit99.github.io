@@ -3,7 +3,7 @@
 ---
 
 <center>
-<p>This page contains a kind of cheat sheet of elementary calculus. <a href="../../../Home.html">(../)</a></p>
+<p>This page contains a kind of cheat sheet of elementary calculus. <a href="../../../Home.html">(~/)</a></p>
 </center>
 
 ## Differentials
