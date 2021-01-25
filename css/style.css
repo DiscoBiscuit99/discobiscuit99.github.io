@@ -178,11 +178,14 @@ pre {
 }
 
 .contact-info pre {
+    width: auto;
     display: inline-block;
-    padding-right: 2.5em;
+    /*padding-left: 3em;*/
+    /*padding-right: 5em;*/
+    padding-left: 2em;
+    padding-right: 4em;
     padding-top: 1em;
     padding-bottom: 1em;
-    /*border: 2px solid #555;*/
 }
 
 .gradient { 
