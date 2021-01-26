@@ -6,7 +6,7 @@
 <p>This page contains a kind of cheat sheet of elementary calculus. <a href="../../Home.html">(../)</a></p>
 </center>
 
-## Differentials
+## Derivatives
 
 A bunch of differentials to aid the sloppy memory.
 
