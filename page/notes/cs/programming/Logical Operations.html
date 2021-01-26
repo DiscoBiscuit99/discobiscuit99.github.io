@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+<script src="../../../../js/scroll.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="../../../../js/MathJax-master/es5/tex-mml-chtml.js"></script> 
+<link rel="browser tab icon" href="../../../../icons/favicon.ico" type="image/x-icon"/>
+
+<link rel="stylesheet" href="../../../../css/style.css">
+<title>Logical Operations</title>
+</head>
+<body>
+<div class="container">
+<div class="gradient-seperator"></div>
+<div class="div-block"> 
+  <h1>Logical Operations</h1>
+
+<hr />
+
+<center>
+<p>A brief list of the most common logical operations. <a href="../../../Home.html">(~/)</a></p>
+</center>
+
+
+<h2>Bits and bytes</h2>
+
+<p>A single binary digit is called a <strong>bit</strong>. Because it&rsquo;s binary, it can either be <strong>ON (1)</strong> or <strong>OFF (0)</strong>. Eight bits make a <strong>byte</strong>, so a byte can go as high as <code>2^8 = 255</code>. In hex that is 0xFF. The common multiples you will see are 1 byte (0xFF), 2 bytes (0xFFFF), 4 bytes (0xFFFFFFFF), and 8 bytes (0xFFFFFFFFFFFFFFFF).</p>
+
+<h2>AND, OR, XOR, NOT</h2>
+
+<p>Beyond understanding how to read binary and hex, you need to know how to manipulate them with some common operations: <strong>AND</strong>, <strong>OR</strong>, and <strong>XOR</strong>. (Fun fact: XOR is short for <em>exclusive-or</em>.) They are explained most concisely in table form:</p>
+
+<pre><code>-------------
+| Operation |
+----------------------
+| bit | bit | result |
+----------------------
+
+-------           ------            -------
+| AND |           | OR |            | XOR |
+-------------     -------------     -------------
+| 0 | 0 | 0 |     | 0 | 0 | 0 |     | 0 | 0 | 0 |
+| 0 | 1 | 0 |     | 0 | 1 | 1 |     | 0 | 1 | 1 |
+| 1 | 0 | 0 |     | 1 | 0 | 1 |     | 1 | 0 | 1 |
+| 1 | 1 | 1 |     | 1 | 1 | 1 |     | 1 | 1 | 0 |
+-------------     -------------     -------------
+
+-------------        -------
+| Operation |        | NOT |
+----------------     ---------
+| bit | result |     | 0 | 1 |
+| bit | result |     | 1 | 0 |
+----------------     --------- 
+</code></pre>
+
+<p><strong>AND</strong> is true if both bits are true. <strong>OR</strong> is true if neither bit is true. <strong>NOT</strong> toggles the bit. <strong>XOR</strong> is true if only a single bit is true. In C-like languages, <strong>AND</strong> is often represented by the symbol <code>&amp;</code>, <strong>OR</strong> is often represented by the symbol <code>|</code>, <strong>XOR</strong> by the symbol <code>^</code>, and <strong>NOT</strong> by the symbol <code>~</code>.</p>
+
+<h2>Bitmasking</h2>
+
+<p>AND and OR are especially useful for bitmasking, where you can manipulate a binary number with another binary number.</p>
+
+<p>AND is good for <strong>clearing bits</strong>.</p>
+
+<p>Let&rsquo;s say we have the binary number 0b0110 and we want to clear the second bit. We can AND it with 0b1101. The 0 will clear the bit if it&rsquo;s set (<code>1 &amp; 0 = 0</code>), but any set bits will stay the set (<code>1 &amp; 1 = 1</code>). Another small example:</p>
+
+<pre><code>0b0110
+0b1101 &amp;
+------
+0b0100
+</code></pre>
+
+<p>OR is good for <strong>setting bits</strong>.</p>
+
+<p>Let&rsquo;s say we have, again, the binary number 0b0110 and we want to set the fourth bit. We can OR it with 0b1000; the 1 will set the bit if it&rsquo;s not set (<code>1 | 0 = 1</code>), but any unset bits will stay unset (<code>0 | 1 = 1</code>). Another small example:</p>
+
+<pre><code>0b0110
+0b1000 |
+------
+0b1110
+</code></pre>
+
+<p>XOR is good for many things, but one common application in CPUs is to clear a register by XOR'ing it with itself.</p>
+
+<p>Let&rsquo;s say we have, bear with me now, the binary number 0b0110 and we want to clear it all to zeroes without using any other numbers. We can use XOR:</p>
+
+<pre><code>0b0110
+0b0110 ^
+------
+0b0000
+</code></pre>
+
+<p>NOT is good for <strong>toggling bits</strong>.</p>
+
+<p>Let&rsquo;s say we have, for the last time, the binary number 0b0110 and we want to toggle the off bits on and the on bits off. We can use the NOT operation:</p>
+
+<pre><code>0b0110 ~
+------
+0b1001
+</code></pre>
+
+<h2>Bit shifting</h2>
+
+<p><strong>Bit shifting</strong> is the act of moving the bits of a number left or right. A left shift is equivalent to multiplying by 2 and a right shift is equivalent to dividing by 2. In most C-like languages, the symbols used for shifting are <code>&lt;&lt;</code> for a left shift, and <code>&gt;&gt;</code> for a right shift.</p>
+
+<pre><code>0b100 (4) &gt;&gt; 0b010 (2) &gt;&gt; 0b001 (1)
+0b001 (1) &lt;&lt; 0b010 (2) &lt;&lt; 0b100 (4)
+</code></pre>
+
+</div>
+<div class="gradient-seperator"></div>
+</div>
+<div class="footer">
+Valdemar Høgsvig Lorenzen &copy; 2020
+</div>
+</body>
+</html>
+  

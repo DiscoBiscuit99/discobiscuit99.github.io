@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+<script src="../../../../js/scroll.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="../../../../js/MathJax-master/es5/tex-mml-chtml.js"></script> 
+<link rel="browser tab icon" href="../../../../icons/favicon.ico" type="image/x-icon"/>
+
+<link rel="stylesheet" href="../../../../css/style.css">
+<title>Differential Calculus II</title>
+</head>
+<body>
+<div class="container">
+<div class="gradient-seperator"></div>
+<div class="div-block"> 
+  <p><a href="#">#</a> Differential Calculus II</p>
+
+<hr />
+
+<center>
+<p>A continuation on stuff regarding differential calculus. <a href="../../../Home.html">(~/)</a></p>
+</center>
+
+
+<h2>Reciprocal functions</h2>
+
+<p>Given the \( f(x) = \frac{1}{g(x)} = g(x)^{-1} \), find the derivative \( f'(x) \)?</p>
+
+<h3>1.) The difference</h3>
+
+<p>\[ \Delta y = g(x + \Delta x)^{-1} - g(x)^{-1} \]</p>
+
+<p>\[
+\Delta y =
+\frac{1}{g(x + \Delta x)} \cdot \frac{g(x)}{g(x)} -
+\frac{1}{g(x)} \cdot \frac{g(x + \Delta x)}{g(x + \Delta x)}
+\]</p>
+
+<p>\[
+\Delta y =
+\frac{g(x) - g(x + \Delta x)}{g(x + \Delta x) \cdot g(x)}
+\]</p>
+
+<h3>2.) The difference quotient</h3>
+
+<p>\[
+\frac{\Delta y}{\Delta x} =
+\frac{g(x) - g(x + \Delta x)}{g(x + \Delta x) \cdot g(x) \cdot \Delta x}
+\]</p>
+
+<h3>3.) The derivative</h3>
+
+<p>\[
+\lim_{\Delta x \to 0} \left[
+\frac{g(x) - g(x + \Delta x)}{g(x + \Delta x) \cdot g(x) \cdot \Delta x}
+\right]
+\]</p>
+
+<p>\[
+\lim_{\Delta x \to 0} \left[
+- \frac{\left[ g(x + \Delta x) - g(x) \right]}{g(x + \Delta x) \cdot g(x) \cdot \Delta x}
+\right]
+\]</p>
+
+<p>\[
+\lim_{\Delta x \to 0} \left[
+g(x + \Delta x) - g(x) \right] \Rightarrow
+g'(x)
+\]</p>
+
+<p>\[
+\lim_{\Delta x \to 0} \left[
+g(x + \Delta x) \cdot g(x) \right] \Rightarrow
+g(x) \cdot g(x) = g(x)^{2}
+\]</p>
+
+<p>\[
+f'(x) = - \frac{g'(x)}{g(x)^{2}}
+\]</p>
+
+<h2>Implicit differentiation</h2>
+
+</div>
+<div class="gradient-seperator"></div>
+</div>
+<div class="footer">
+Valdemar Høgsvig Lorenzen &copy; 2020
+</div>
+</body>
+</html>
+  

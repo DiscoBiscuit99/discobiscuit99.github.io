@@ -34,9 +34,7 @@ def gen_pre(file)
 
 <script src="#{rel_to}js/scroll.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+<script id="MathJax-script" async src="#{rel_to}js/MathJax-master/es5/tex-mml-chtml.js"></script> 
 <link rel="browser tab icon" href="#{rel_to}icons/favicon.ico" type="image/x-icon"/>
 
 <link rel="stylesheet" href="#{rel_to}css/style.css">
