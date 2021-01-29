@@ -120,6 +120,8 @@ img {
     min-width: 200pt;
     width: 60%;
     margin: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
 }
 
 pre {

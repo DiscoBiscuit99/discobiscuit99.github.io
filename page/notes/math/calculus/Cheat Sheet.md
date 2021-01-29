@@ -13,7 +13,7 @@ A bunch of differentials to aid the sloppy memory.
 <table>
     <tr>
         <td><b>Function \( f(x) \)</b></td>
-        <td><b>Differential Quotient \( f'(x) \)</b></td>
+        <td><b>Derivative \( f'(x) \)</b></td>
     </tr>
     <tr>
         <td>\( a \)</td>
@@ -112,9 +112,7 @@ A bunch of indefinite integrals to counteract forgettening.
     </tr>
     <tr>
         <td>\( g(x) \cdot h(x) \)</td>
-        <td>\( G(x) \cdot h(x) - \int G(x) \cdot h'(x) dx + k \)</td>
+        <td>\( G(x) \cdot h(x) - \int \left( G(x) \cdot h'(x) \right)~\mathrm dx + k \)</td>
     </tr>
 </table>
-
-
 

@@ -8,7 +8,23 @@
 
 ## Linear functions
 
+A linear function is defined as follows:
+
+\\[
+f(x) = ax + b
+\\]
+
+Where x is the independent variable and \\( f(x) = y \\) is the dependent one. A true function has only one y-value per x-value.
+
 ## Power functions
+
+The power function looks like as follows:
+
+\\[ f(x) = b \cdot x^{a} \\]
+
+### The accumulative power function
+
+\\[ f(x) = K \cdot \left( 1 + \frac{p}{n} \right) \\]
 
 ## Quadratic functions
 

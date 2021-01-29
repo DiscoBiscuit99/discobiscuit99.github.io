@@ -40,7 +40,7 @@ Also, document procedures better.)
 <h3>Proofs</h3>
 <ul>
     <li>
-        <a href="notes/math/proofs/Pythagoras Theorem.html">Pythagoras Theorem</a>
+        <a href="notes/math/proofs/Pythagora's Theorem.html">Pythagora's Theorem</a>
     </li>
 </ul>
 </div>
