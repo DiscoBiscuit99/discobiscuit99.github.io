@@ -27,9 +27,78 @@
 
 <h2>Scaling</h2>
 
+<p>A matrix can be scaled by a scalar as mentioned in the <em>Basic Operations</em> section. The column vector \( P \) for instance, if multiplied by a scalar \( s \), becomes \( sP \). The scalar can be rewritten as a matrix and matrix multiplication can be applied.</p>
+
+<p>\[
+sP =
+\begin{bmatrix}
+s &amp; 0 &amp; 0 \\
+0 &amp; s &amp; 0 \\
+0 &amp; 0 &amp; s \\
+\end{bmatrix}
+\begin{bmatrix}
+P_{x} \\
+P_{y} \\
+P_{z} \\
+\end{bmatrix} =
+\begin{bmatrix}
+sP_{x} \\
+sP_{y} \\
+sP_{z} \\
+\end{bmatrix}
+\]</p>
+
+<p>This is called uniform scaling since all the vector&rsquo;s elements are scaled the same. Conversely, three different scalar values can be used in place of \( s \) and the elements can thereby be scaled independently from each other.</p>
+
+<p>\[
+sP =
+\begin{bmatrix}
+s &amp; 0 &amp; 0 \\
+0 &amp; t &amp; 0 \\
+0 &amp; 0 &amp; u \\
+\end{bmatrix}
+\begin{bmatrix}
+P_{x} \\
+P_{y} \\
+P_{z} \\
+\end{bmatrix} =
+\begin{bmatrix}
+sP_{x} \\
+tP_{y} \\
+uP_{z} \\
+\end{bmatrix}
+\]</p>
+
+<p>Since all elements in the vector \( P \) are scaled differently, this is called non-uniform scaling. If all but one scalar value equals one, we have what is called directional scaling &mdash; say, for example, \( t \) and \( u \) are one.</p>
+
 <h2>Rotation</h2>
 
 <h2>Translation</h2>
+
+<p>For translation in three dimensions, a four dimensional matrix is needed, where it&rsquo;s diagonal equals one to maintain the xyz components. The translation components reside in the fourth column of the translation matrix. The translated vector is produced by matrix multiplication by the translation matrix, like so:</p>
+
+<p>\[
+\begin{bmatrix}
+1 &amp; 0 &amp; 0 &amp; a \\
+0 &amp; 1 &amp; 0 &amp; b \\
+0 &amp; 0 &amp; 1 &amp; c \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y \\
+z \\
+1 \\
+\end{bmatrix} =
+\begin{bmatrix}
+x + a \\
+y + b\\
+z + c\\
+1 \\
+\end{bmatrix}
+\]</p>
+
+<p>The vector is hereby translated in all axes, name by \( a \), \( b \), and \( c \) amount. An important note to make is that it matters when the translation matrix is multiplied. It is crucial to decide whether or not to translate before or after a scaling since the translation matrix will also be scaled if it is multiplied last.</p>
 
 <h2>Optimization</h2>
 
