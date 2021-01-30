@@ -35,7 +35,12 @@ The elements \\( i = j \\) of a matrix are called the matrix's main diagonal, an
 Matrices are often enclosed in either brackets or parentheses but it isn't required. An example follows:
 
 \\[
-A =
+\begin{matrix}
+a\_{11} & a\_{12} & \dots  & a\_{1j} \\\
+a\_{21} & a\_{22} & \dots  & a\_{2j} \\\
+\vdots  & \vdots  & \ddots & \vdots \\\
+a\_{i1} & a\_{i2} & \dots  & a\_{ij} \\\
+\end{matrix} = 
 \begin{bmatrix}
 a\_{11} & a\_{12} & \dots  & a\_{1j} \\\
 a\_{21} & a\_{22} & \dots  & a\_{2j} \\\
@@ -48,16 +53,6 @@ a\_{21} & a\_{22} & \dots  & a\_{2j} \\\
 \vdots  & \vdots  & \ddots & \vdots \\\
 a\_{i1} & a\_{i2} & \dots  & a\_{ij} \\\
 \end{pmatrix}
-\\]
-
-\\[
-B =
-\begin{matrix}
-a\_{11} & a\_{12} & \dots  & a\_{1j} \\\
-a\_{21} & a\_{22} & \dots  & a\_{2j} \\\
-\vdots  & \vdots  & \ddots & \vdots \\\
-a\_{i1} & a\_{i2} & \dots  & a\_{ij} \\\
-\end{matrix}
 \\]
 
 Matrices are often represented by capital letters and their elements by their counterpart, some times with indices (like \\( a\_{11} \\), \\( a\_{12} \\), \\( \dots \\), \\( a\_{ij} \\)).
