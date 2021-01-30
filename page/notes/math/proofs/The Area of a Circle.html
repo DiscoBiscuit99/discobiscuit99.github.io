@@ -25,6 +25,80 @@
 </center>
 
 
+<p>By rotating a circle&rsquo;s radius, divided into infinitessimally small parts along the x axis, \( 2 \pi \) about it&rsquo;s center, the circle&rsquo;s area is produced. This can be described with the following integral:</p>
+
+<p>\[
+A = 2 \pi \int_{0}^{r} x~\mathrm dx
+\]</p>
+
+<p>\[ \Downarrow \]</p>
+
+<p>\[
+A = 2 \pi \left[ \frac{x^{2}}{2} \right]_{0}^{r}
+\]</p>
+
+<p>\[ \Downarrow \]</p>
+
+<div class="answer">
+\[ A = \frac{2 \pi r^{2}}{2} = \pi r^{2} \]
+</div>
+
+
+<p>The area of the circle can also be derived from it&rsquo;s curve length. The curve length is given by as follows:</p>
+
+<p>\[
+y = \sqrt{r^{2} - x^{2}}
+\]</p>
+
+<p>Note that the above equation is, of course, the circle&rsquo;s.</p>
+
+<p>\[
+y' = - \frac{x}{\sqrt{r^{2}} - x^{2}}
+\]</p>
+
+<p>\[
+L = \int_{-r}^{r} \sqrt{1 + (y')^{2}}~\mathrm dx \Rightarrow
+\int_{-r}^{r} \sqrt{1 + \left( - \frac{x}{\sqrt{r^{2} - x^{2}}} \right)^{2}}~\mathrm dx \Rightarrow
+\int_{-r}^{r} \sqrt{1 + \frac{x^{2}}{r^{2} - x^{2}}}~\mathrm dx
+\]</p>
+
+<p>Doing some reduction work on the inner part of the squareroot yields:</p>
+
+<p>\[
+1 + \frac{x^{2}}{r^{2} - x^{2}} =
+\frac{r^{2} - x^{2}}{r^{2} - x^{2}} + \frac{x^{2}}{r^{2} - x^{2}} =
+\frac{r^{2} - x^{2} + x^{2}}{r^{2} - x^{2}} =
+x^{2}
+\]</p>
+
+<p>Thus, the integral becomes:</p>
+
+<p>\[
+L = \int_{-r}^{r} \sqrt{x^{2}}~\mathrm dx \Rightarrow
+2 \int_{0}^{r} x~\mathrm dx
+\]</p>
+
+<p>Since the integral is symmetrical, it&rsquo;s range has been divided by two. Lastly:</p>
+
+<p>\[
+A =
+\pi \cdot L =
+\pi \cdot 2 \int_{0}^{r} x~\mathrm dx
+\]</p>
+
+<p>\[ \Downarrow \]</p>
+
+<div class="answer">
+\[
+A = 
+2 \pi \left[ \frac{x^{2}}{2} \right]_{0}^{2} =
+2 \pi \left( \frac{r^{2}}{2} \right) =
+\frac{2 \pi r^{2}}{2} =
+\pi r^{2}
+\]
+</div>
+
+
 
 
 </div>
