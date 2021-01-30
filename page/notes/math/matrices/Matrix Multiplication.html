@@ -25,7 +25,76 @@
 </center>
 
 
+<p>Multiplying two matrices is called matrix multiplication and follows some somewhat special rules. The following rule applies: find the dot products for every row of the first matrix and every column of the second matrix. That is to say, multiply every row of the first matrix by every column of the second matrix. Specifying further, every element in the \( n \)&lsquo;th row of the first matrix is therefore multiplied with the corresponding element of the \( n \)'th column of the second matrix. If \( A \) is a matrix \( m \times r \) and \( B \) is a matrix \( r \times n \), then \( AB \) will be a matrix \( m \times n \). An example:</p>
 
+<p>\[
+A =
+\begin{bmatrix}
+a_{11} &amp; a_{12} &amp; a_{13} \\
+a_{21} &amp; a_{22} &amp; a_{23} \\
+\end{bmatrix} =
+\begin{bmatrix}
+1 &amp; 2 &amp; 3 \\
+4 &amp; 5 &amp; 6 \\
+\end{bmatrix},~~~
+B =
+\begin{bmatrix}
+b_{11} &amp; b_{12} \\
+b_{21} &amp; b_{22} \\
+b_{21} &amp; b_{22} \\
+\end{bmatrix} =
+\begin{bmatrix}
+1 &amp; 2 \\
+3 &amp; 4 \\
+5 &amp; 6 \\
+\end{bmatrix}
+\]</p>
+
+<p>Starting at the first row of the first matrix and the first column of the second, we find the dot product and continue until all combinations of the rows and columns are satisfied. Note, the order in which the dot products are found is important.</p>
+
+<p>\[
+AB = C =
+\begin{bmatrix}
+\color{Dandelion}{a_{11}} &amp; \color{Dandelion}{a_{12}} &amp; \color{Dandelion}{a_{13}} \\
+a_{21} &amp; a_{22} &amp; a_{23} \\
+\end{bmatrix}
+\begin{bmatrix}
+\color{Dandelion}{b_{11}} &amp; b_{12} \\
+\color{Dandelion}{b_{21}} &amp; b_{22} \\
+\color{Dandelion}{b_{21}} &amp; b_{22} \\
+\end{bmatrix}
+\]</p>
+
+<p>\[
+C_{11} =
+a_{11} \cdot b_{11} + a_{12} \cdot b_{21} + a_{13} \cdot b_{31}
+\]</p>
+
+<p>\[ \vdots \]</p>
+
+<p>\[
+C_{11} =
+1 \cdot 1 + 2 \cdot 3 + 3 \cdot 5 = 22
+\]</p>
+
+<p>\[
+C_{12} =
+1 \cdot 2 + 2 \cdot 4 + 3 \cdot 6 = 28
+\]</p>
+
+<p>\[ \vdots \]</p>
+
+<p>\[
+C =
+\begin{bmatrix}
+22 &amp; 28 \\
+49 &amp; 64 \\
+\end{bmatrix}
+\]</p>
+
+<p>As expected, we get a matrix consisting of the first matrix (\( A \)&rsquo;s) rows \( m \) and the second matrix (\( B \)&rsquo;s) columns \( n \). Matrix \( A \) has two rows and matrix \( B \) has two columns so matrix \( C \) therefore becomes a \( 2 \times 2 \) matrix.</p>
+
+<p>From this, it can be extrapolated that the order of operations &mdash; as stated above &mdash; matters. If point is to be translated by a matrix, for example, it is important that the point be the second matrix; otherwise the product would be a new matrix and not the translated point.</p>
 
 </div>
 <div class="gradient-seperator"></div>

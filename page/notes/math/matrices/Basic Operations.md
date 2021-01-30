@@ -65,9 +65,40 @@ Matrices are often represented by capital letters and their elements by their co
 
 ## Basic operations
 
-### Addition
+Some basic operations of matrices include addition, subtraction and scalar multiplication.
 
-### Subtraction
+### Addition (and subtraction)
+
+To add to matrices, simply add their corresponding elements. A simple example:
+
+\\[
+\begin{bmatrix}
+a\_{11} & a\_{12} \\\
+a\_{21} & a\_{22} \\\
+\end{bmatrix} +
+\begin{bmatrix}
+b\_{11} & b\_{12} \\\
+b\_{21} & b\_{22} \\\
+\end{bmatrix} =
+\begin{bmatrix}
+a\_{11} + b\_{11} & a\_{12} + b\_{12} \\\
+a\_{21} + b\_{21} & a\_{22} + b\_{22} \\\
+\end{bmatrix}
+\\]
 
 ### Scalar multiplication
+
+Multiplication by a scalar value with a matrix is called scalar multiplication. Simply multiply each element of the matrix with the scalar value. This will, of course, just scale the matrix.
+
+\\[
+s \cdot
+\begin{bmatrix}
+a\_{11} & a\_{12} \\\
+a\_{21} & a\_{22} \\\
+\end{bmatrix} =
+\begin{bmatrix}
+s \cdot a\_{11} & s \cdot a\_{12} \\\
+s \cdot a\_{21} & s \cdot a\_{22} \\\
+\end{bmatrix}
+\\]
 
