@@ -79,6 +79,20 @@ Also, document procedures better.)
 </ul>
 </div>
 <div>
+<h3>Matrices</h3>
+<ul>
+    <li>
+        <a href="notes/math/matrices/Basic Operations.html">Basic Operations</a>
+    </li>
+    <li>
+        <a href="notes/math/matrices/Matrix Multiplication.html">Matrix Multiplication</a>
+    </li>
+    <li>
+        <a href="notes/math/matrices/Linear Transformations.html">Linear Transformations</a>
+    </li>
+</ul>
+</div>
+<div>
 <h3>Analytic Geometry</h3>
 <ul>
     <li>
