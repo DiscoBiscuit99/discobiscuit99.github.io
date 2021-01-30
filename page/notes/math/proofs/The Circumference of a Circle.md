@@ -6,7 +6,7 @@
 <p>This page outlines an approach to prove the circumference of a circle. <a href="../../../Home.html">(~/)</a></p>
 </center>
 
-Simply integrating from \\( 0 \\) to \\( 2 \pi \\) in the range of a circles radius yields the circumference of the circle. This can be thought of as a pencil touching the paper at length radius from a center point and rotating about it \\( 2 \pi \\) degrees and, thus, etching the circumference. The integral:
+Simply integrating from \\( 0 \\) to \\( 2 \pi \\) in the range of a circles radius yields the circumference of the circle. As you can probably imagine, this can be thought of as a pencil touching the paper at length radius from a center point and rotating about it \\( 2 \pi \\) degrees, thus etching the circumference. The integral:
 
 \\[
 C = \int_{0}^{2 \pi} r~\mathrm dx 
