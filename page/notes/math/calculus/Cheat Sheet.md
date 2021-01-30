@@ -8,7 +8,7 @@
 
 ## Derivatives
 
-A bunch of differentials to aid the sloppy memory.
+A bunch of differentials to aid my sloppy memory.
 
 <table>
     <tr>
@@ -59,7 +59,7 @@ A bunch of differentials to aid the sloppy memory.
 
 ## Integrals
 
-A bunch of indefinite integrals to counteract forgettening.
+A bunch of indefinite integrals to counteract the forgettening.
 
 <table style="margin-bottom: 1em">
     <tr>
