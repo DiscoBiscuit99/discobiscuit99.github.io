@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+<script src="../../../../js/scroll.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="../../../../js/MathJax-master/es5/tex-mml-chtml.js"></script> 
+<link rel="browser tab icon" href="../../../../icons/favicon.ico" type="image/x-icon"/>
+
+<link rel="stylesheet" href="../../../../css/style.css">
+<title>The Arc Radius</title>
+</head>
+<body>
+<div class="container">
+<div class="gradient-seperator"></div>
+<div class="div-block"> 
+  <h1>The Arc Radius</h1>
+
+<hr />
+
+<center>
+<p>This page outlines an approach to calculate the radius of an arc. <a href="../../../Home.html">(~/)</a></p>
+</center>
+
+
+<p>The circle and it&rsquo;s arc:</p>
+
+<p><img src="imgs/arc-radius.png" title="Geometric representation of the circle and the arc in question" alt="Geometric representation of the circle and the arc in question" /></p>
+
+<p>In the figure above, both lines are cords of the circle, the vertical line intersecting the center of the circle and thus being the circle&rsquo;s diameter, that equaling \( b + c \). The radius to be decided is that of the blue part. The width is \( 2a \) and the height \( b \). Since two intersecting cords always yield the same product, you get that \( a \cdot a = b \cdot c \).
+Reducing this equation yields the following: \( a^{2} = b \cdot c \), and isolating \( c \) by dividing with the width gives:</p>
+
+<p>\[ c = \frac{a^{2}}{b} \]</p>
+
+<p>Since the diameter (\( d \)) equals \( b + c \), substituting \( c \) produces:</p>
+
+<p>\[ d = b + \frac{a^{2}}{b} \]</p>
+
+<p>And since the radius (\( r \)) is half the diameter, the equation is divided by \( 2 \) and as such becomes:</p>
+
+<p>\[
+r = \frac{b}{2} + \frac{a^{2}}{2b}
+\]</p>
+
+<p>The common denominator (\( b \)) is found and the equation is reduced by addition of the fractions.</p>
+
+<p>\[ r = \frac{b^{2}}{2b} + \frac{a^{2}}{2b} \]</p>
+
+<p>\[ \Downarrow \]</p>
+
+<div class="answer">
+\[ r = \frac{a^{2} + b^{2}}{2b} \]
+</div>
+
+
+</div>
+<div class="gradient-seperator"></div>
+</div>
+<div class="footer">
+Valdemar Høgsvig Lorenzen &copy; 2020
+</div>
+</body>
+</html>
+  

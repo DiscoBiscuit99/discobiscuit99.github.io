@@ -42,6 +42,15 @@ Also, document procedures better.)
     <li>
         <a href="notes/math/proofs/Pythagora's Theorem.html">Pythagora's Theorem</a>
     </li>
+    <li>
+        <a href="notes/math/proofs/The Circumference of A Circle.html">The Circumference of a Circle</a>
+    </li>
+    <li>
+        <a href="notes/math/proofs/The Area of A Circle.html">The Area of a Circle</a>
+    </li>
+    <li>
+        <a href="notes/math/proofs/The Arc Radius.html">The Arc Radius</a>
+    </li>
 </ul>
 </div>
 <div>
