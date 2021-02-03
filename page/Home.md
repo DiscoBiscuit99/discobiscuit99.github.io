@@ -65,6 +65,12 @@ Also, document procedures better.)
     <li>
         <a href="notes/math/calculus/Differential Calculus II.html">Differential Calculus II</a>
     </li>
+	<li>
+		<a href="notes/math/calculus/Integral Calculus I.html">Integral Calculus I</a>
+	</li>
+	<li>
+		<a href="notes/math/calculus/Integral Calculus II.html">Integral Calculus II</a>
+	</li>
 </ul>
 </div>
 <div>

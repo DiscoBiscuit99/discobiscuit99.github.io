@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+<script src="../../../../js/scroll.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="../../../../js/MathJax-master/es5/tex-mml-chtml.js"></script> 
+<link rel="browser tab icon" href="../../../../icons/favicon.ico" type="image/x-icon"/>
+
+<link rel="stylesheet" href="../../../../css/style.css">
+<title>Integral Calculus I</title>
+</head>
+<body>
+<div class="container">
+<div class="gradient-seperator"></div>
+<div class="div-block"> 
+  <h1>Integral Calculus I</h1>
+
+<hr />
+
+<center>
+<p>Foundational stuff regarding integral calculus. <a href="../../../Home.html">(~/)</a></p>
+</center>
+
+
+<h2>A simple integral</h2>
+
+<p>Geometrically, integrating a function yields the area under it. A function can be integrated with or without limits. An integral of a function \( f(x) \) in the range \( [a;b] \) looks as follows:</p>
+
+<p>\[
+\int_{a}^{b} f(x)~\mathrm dx
+\]</p>
+
+<p>Say the function \( f(x) = x \) and the range is \( [1;2] \). The integral, then, is:</p>
+
+<p>\[
+A =
+\int_{1}^{2} x~\mathrm dx =
+\left[ \frac{x^{2}}{2} \right]_{1}^{2} =
+\frac{2^{2}}{2} - \frac{1^{2}}{2} =
+2 - \frac{1}{2} =
+1.5
+\]</p>
+
+<p>The rule is simple. Given integration with regards to \( x \):</p>
+
+<p>\[
+x^{n} \Rightarrow \frac{x^{n+1}}{n+1}
+\]</p>
+
+<p>Here is another simple integral with the range \( [0;1] \). The function, a simple linear equation \( f(x) = 3x+2 \). The integral becomes:</p>
+
+<p>\[
+A =
+\int_{0}^{1} 3x+2~\mathrm dx =
+\left[ \frac{3x^{2}}{2} + 2x \right]_{0}^{1} =
+\left( \frac{3 \cdot 1^{2}}{2} + 2 \cdot 1 \right) - \left( \frac{3 \cdot 0^{2}}{2} + 2 \cdot 0 \right)
+\]</p>
+
+<p>\[
+= \left( \frac{3 \cdot 1^{2}}{2} + 2 \cdot 1 \right) =
+\frac{3}{2} + 2 =
+\frac{3}{2} + \frac{4}{2} =
+\frac{3 + 4}{2} =
+\frac{7}{2} =
+3.5
+\]</p>
+
+<p>If the integral is indefinite, a constant, often \( C \) or \( k \), is simply added and, thus, the function can be moved along the y-axis. Other than that, the integral is computed the same and looks as follows:</p>
+
+<p>\[ \int f(x)~\mathrm dx \]</p>
+
+</div>
+<div class="gradient-seperator"></div>
+</div>
+<div class="footer">
+Valdemar Høgsvig Lorenzen &copy; 2020
+</div>
+</body>
+</html>
+  
