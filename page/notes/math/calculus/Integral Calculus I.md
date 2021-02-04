@@ -53,3 +53,12 @@ If the integral is indefinite, a constant, often \\( C \\) or \\( k \\), is simp
 
 \\[ \int f(x)~\mathrm dx \\]
 
+Thus, the same example as before becomes:
+
+\\[
+A =
+\int 3x + 2~\mathrm dx =
+\frac{3x^{2}}{2} + 2x + C
+\\]
+
+
