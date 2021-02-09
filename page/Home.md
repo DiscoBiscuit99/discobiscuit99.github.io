@@ -9,6 +9,7 @@ Valdemar Høgsvig Lorenzen
 > I like to reinvent triangle z-clipping about once every six months.
 
 > Sooner or later, I'll run out of new ways to get it wrong.
+
 > --- <cite>Someone on Twitter</cite>
 
 My name is Valdemar Høgsvig Lorenzen. Yes, it's nordic. 
