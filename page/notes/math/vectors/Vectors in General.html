@@ -41,8 +41,19 @@
 
 <p>Vector addition and subtraction is done, as one would expect, by adding or subtracting the corresponding elements of the vector. As an example, assume we have:</p>
 
-<p>\[ \vec{a} = \begin{pmatrix} 2 \\ 3 \end{pmatrix} \]
-\[ \vec{b} = \begin{pmatrix} 1 \\ 4 \end{pmatrix} \]</p>
+<p>\[
+\vec{a} =
+\begin{pmatrix}
+2 \\
+3 \\
+\end{pmatrix}
+~~~~~~~
+\vec{b} =
+\begin{pmatrix}
+1 \\
+4 \\
+\end{pmatrix}
+\]</p>
 
 <p>Then adding the vectors would look like this:</p>
 
@@ -78,36 +89,85 @@ s \cdot \begin{pmatrix} x \\ y \end{pmatrix} =
 \begin{pmatrix} s \cdot x \\ s \cdot y \end{pmatrix}
 \]</p>
 
-<h2>Calculating the angle between two vectors</h2>
-
-<p>Calculating the angle between two vectors can be done by first calculating the angles of the vectors from the x-axis and then subtracting them. The difference is then the angle between the two. Starting with:</p>
-
-<p>\[
-\vec{a} =
-\begin{pmatrix} x_1 \\ y_1 \end{pmatrix},~~~
-\vec{b} =
-\begin{pmatrix} x_2 \\ y_2 \end{pmatrix}
-\]</p>
-
-<p>Calculate the angles from the x-axis:</p>
-
-<p>\[
-tan(\vec{a}_{\theta}) = \frac{y_1}{x_1} \Rightarrow
-\vec{a}_{\theta} =
-tan^{-1} \left( \frac{y_1}{x_1} \right)
-\]</p>
-
-<p>Subtracting them yields the angle between them, here named \( \phi \).</p>
-
-<p>\[
-\phi = | \vec{a}_{\theta} - \vec{b}_{\theta} |
-\]</p>
-
 <h2>Vector equilibrium</h2>
 
 <p>Vector equilibrium means that the sum of the vectors equal zero:</p>
 
 <p>\[ \vec{a} + \vec{b} + \vec{c} + \vec{d} = 0 \]</p>
+
+<h2>Finding the angle between two vectors</h2>
+
+<p>Given two vectors, what is the angle \( \theta \) between them?</p>
+
+<p>\[
+\vec{a} =
+\begin{pmatrix}
+x_{1} \\
+y_{1} \\
+\end{pmatrix}
+~~~~~
+\vec{b} =
+\begin{pmatrix}
+x_{2} \\
+y_{2} \\
+\end{pmatrix}
+\]</p>
+
+<p>Since we have the vector components, we can use the tan function to extract the angle between each vector and the x-axis; then, by subtracting the two angles &mdash; and taking the absolute value &mdash; we find the angle between them.</p>
+
+<p>\[
+tan(\alpha) = \frac{y_{1}}{x_{1}}
+~~~~~~~
+tan(\beta) = \frac{y_{2}}{x_{2}}
+\]</p>
+
+<p>\[
+\alpha = tan^{-1} \frac{y_{1}}{x_{1}}
+~~~~~~~
+\beta = tan^{-1} \frac{y_{2}}{x_{2}}
+\]</p>
+
+<p>Thus, \( \theta \) is found:</p>
+
+<p>\[
+\theta = || \alpha - \beta ||
+\]</p>
+
+<h2>The dot product</h2>
+
+<p>Computing the dot product of two vectors simply means adding the products of the corresponding elements. The notation is as follows:</p>
+
+<p>\[
+\vec{a} \bullet \vec{b} =
+\vec{a_{x}} \cdot \vec{b_{x}} + \vec{a_{y}} \cdot \vec{b_{y}}
+\]</p>
+
+<p>The dot product can also be found like so:</p>
+
+<p>\[
+\vec{a} \bullet \vec{b} =
+|| \vec{a} || \cdot || \vec{b} || \cdot cos(\theta)
+\]</p>
+
+<p>Where \( \theta \) is the angle between the vectors.</p>
+
+<h2>Tværvektoren (english translation?)</h2>
+
+<p>Tværvektoren står vinkelret på sit udspring og noteres \( \hat{v} \). Givet vektoren \( \vec{v} \) findes den således:</p>
+
+<p>\[
+\vec{v} =
+\begin{pmatrix}
+x \\
+y \\
+\end{pmatrix}
+~~~~~~~
+\hat{v} =
+\begin{pmatrix}
+-y \\
+ x \\
+\end{pmatrix}
+\]</p>
 
 </div>
 <div class="gradient-seperator"></div>

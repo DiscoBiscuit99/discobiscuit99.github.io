@@ -22,8 +22,19 @@ A unit vector has always a value of _1 unit_. That is to say, the magnitude of t
 
 Vector addition and subtraction is done, as one would expect, by adding or subtracting the corresponding elements of the vector. As an example, assume we have:
 
-\\[ \vec{a} = \begin{pmatrix} 2 \\\ 3 \end{pmatrix} \\]
-\\[ \vec{b} = \begin{pmatrix} 1 \\\ 4 \end{pmatrix} \\]
+\\[ 
+\vec{a} = 
+\begin{pmatrix} 
+2 \\\ 
+3 \\\
+\end{pmatrix} 
+~~~~~~~
+\vec{b} = 
+\begin{pmatrix} 
+1 \\\ 
+4 \\\
+\end{pmatrix}
+\\]
 
 Then adding the vectors would look like this:
 
@@ -59,34 +70,87 @@ s \cdot \begin{pmatrix} x \\\ y \end{pmatrix} =
 \begin{pmatrix} s \cdot x \\\ s \cdot y \end{pmatrix}
 \\]
 
-## Calculating the angle between two vectors
-
-Calculating the angle between two vectors can be done by first calculating the angles of the vectors from the x-axis and then subtracting them. The difference is then the angle between the two. Starting with:
-
-\\[ 
-\vec{a} =
-\begin{pmatrix} x_1 \\\ y_1 \end{pmatrix},~~~
-\vec{b} =
-\begin{pmatrix} x_2 \\\ y_2 \end{pmatrix}
-\\]
-
-Calculate the angles from the x-axis:
-
-\\[
-tan(\vec{a}\_{\theta}) = \frac{y_1}{x_1} \Rightarrow
-\vec{a}\_{\theta} = 
-tan^{-1} \left( \frac{y_1}{x_1} \right)
-\\]
-
-Subtracting them yields the angle between them, here named \\( \phi \\).
-
-\\[
-\phi = | \vec{a}\_{\theta} - \vec{b}\_{\theta} |
-\\]
 
 ## Vector equilibrium
 
 Vector equilibrium means that the sum of the vectors equal zero:
 
 \\[ \vec{a} + \vec{b} + \vec{c} + \vec{d} = 0 \\]
+
+
+## Finding the angle between two vectors
+
+Given two vectors, what is the angle \\( \theta \\) between them? 
+
+\\[
+\vec{a} =
+\begin{pmatrix}
+x\_{1} \\\
+y\_{1} \\\
+\end{pmatrix}
+~~~~~
+\vec{b} =
+\begin{pmatrix}
+x\_{2} \\\
+y\_{2} \\\
+\end{pmatrix}
+\\]
+
+Since we have the vector components, we can use the tan function to extract the angle between each vector and the x-axis; then, by subtracting the two angles --- and taking the absolute value --- we find the angle between them.
+
+\\[
+tan(\alpha) = \frac{y\_{1}}{x\_{1}}
+~~~~~~~
+tan(\beta) = \frac{y\_{2}}{x\_{2}}
+\\]
+
+\\[
+\alpha = tan^{-1} \frac{y\_{1}}{x\_{1}}
+~~~~~~~
+\beta = tan^{-1} \frac{y\_{2}}{x\_{2}}
+\\]
+
+Thus, \\( \theta \\) is found:
+
+\\[
+\theta = || \alpha - \beta ||
+\\]
+
+
+## The dot product
+
+Computing the dot product of two vectors simply means adding the products of the corresponding elements. The notation is as follows:
+
+\\[
+\vec{a} \bullet \vec{b} = 
+\vec{a\_{x}} \cdot \vec{b\_{x}} + \vec{a\_{y}} \cdot \vec{b\_{y}} 
+\\]
+
+The dot product can also be found like so:
+
+\\[
+\\vec{a} \bullet \vec{b} = 
+|| \vec{a} || \cdot || \vec{b} || \cdot cos(\theta)
+\\]
+
+Where \\( \theta \\) is the angle between the vectors.
+
+
+## Tværvektoren (english translation?)
+
+Tværvektoren står vinkelret på sit udspring og noteres \\( \hat{v} \\). Givet vektoren \\( \vec{v} \\) findes den således:
+
+\\[
+\vec{v} =
+\begin{pmatrix}
+x \\\
+y \\\
+\end{pmatrix}
+~~~~~~~
+\hat{v} =
+\begin{pmatrix}
+-y \\\
+ x \\\
+\end{pmatrix}
+\\]
 
