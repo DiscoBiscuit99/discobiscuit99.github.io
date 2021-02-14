@@ -107,6 +107,14 @@ Also, document procedures better.)
     </li>
 </ul>
 </div>
+<div>
+<h3>Other</h3>
+<ul>
+    <li>
+        <a href="notes/math/other/Boolean Algebra.html">Boolean Algebra</a>
+    </li>
+</ul>
+</div>
 </div>
 
 ## Notes on Computer Science
