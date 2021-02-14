@@ -29,7 +29,9 @@
 
 <p>The insertion sort algorithm sorts a given list essentially by splitting the list into a sorted lower sublist and a (still) unsorted upper sublist. This is done by iterating through the list and checking if the current element is less than the previous &mdash; if the current element is not the first in the list &mdash; and if so, swap them and check this new current element against its previous one and continue this way until the statement checks false. Reiterate these steps until the list is sorted.</p>
 
-<p>Example code:</p>
+<p>Time complexity: \( O(n^{2}) \)</p>
+
+<p>Example implementation:</p>
 
 <pre><code>fn insertion_sort(list):
     for (e, i) in list[1..#list]:
@@ -43,11 +45,34 @@
 
 <h2>Selection sort</h2>
 
+<p>The selection sort algorithm iterates through a given list and then iterates again from the current index to the end of the end of the list, while comparing the elements; if the first element is greater than the second, swap them. When the end of the list is reached, the list has been sorted.</p>
+
+<p>Time complexity: \( O(n^{2}) \)</p>
+
+<p>Example implementation:</p>
+
+<pre><code>fn selection_sort(list):
+    for (e0, i) in list:
+        for (e1, j) in list[i..#list]:
+            if e0 &gt; e1:
+                list.swap(i, j);
+</code></pre>
+
+<h2>Merge sort</h2>
+
+<p>Time complexity: \( O(n~log(n)) \)</p>
+
 <h2>Bubble sort</h2>
+
+<p>Time complexity: \( O(n^{2}) \)</p>
 
 <h2>Quick sort</h2>
 
+<p>Time complexity: \( O(n^{2}) \)</p>
+
 <h2>Heap sort</h2>
+
+<p>Time complexity: \( O(n~log(n)) \)</p>
 
 </div>
 <div class="gradient-seperator"></div>
