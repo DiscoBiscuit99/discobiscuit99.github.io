@@ -41,7 +41,7 @@ B =
 \begin{bmatrix}
 b_{11} &amp; b_{12} \\
 b_{21} &amp; b_{22} \\
-b_{21} &amp; b_{22} \\
+b_{31} &amp; b_{32} \\
 \end{bmatrix} =
 \begin{bmatrix}
 1 &amp; 2 \\
@@ -50,7 +50,7 @@ b_{21} &amp; b_{22} \\
 \end{bmatrix}
 \]</p>
 
-<p>Starting at the first row of the first matrix and the first column of the second, we find the dot product and continue until all combinations of the rows and columns are satisfied. Note, the order in which the dot products are found is important.</p>
+<p>Starting at the first row of the first matrix and the first column of the second, we find the dot product and continue until all combinations of the rows and columns are satisfied. Note, the order in which the dot products are calculated is important.</p>
 
 <p>\[
 AB = C =
@@ -61,7 +61,7 @@ a_{21} &amp; a_{22} &amp; a_{23} \\
 \begin{bmatrix}
 \color{Dandelion}{b_{11}} &amp; b_{12} \\
 \color{Dandelion}{b_{21}} &amp; b_{22} \\
-\color{Dandelion}{b_{21}} &amp; b_{22} \\
+\color{Dandelion}{b_{31}} &amp; b_{32} \\
 \end{bmatrix}
 \]</p>
 
@@ -84,6 +84,8 @@ C_{12} =
 
 <p>\[ \vdots \]</p>
 
+<p>\[ \Downarrow \]</p>
+
 <p>\[
 C =
 \begin{bmatrix}
@@ -94,7 +96,7 @@ C =
 
 <p>As expected, we get a matrix consisting of the first matrix (\( A \)&rsquo;s) rows \( m \) and the second matrix (\( B \)&rsquo;s) columns \( n \). Matrix \( A \) has two rows and matrix \( B \) has two columns so matrix \( C \) therefore becomes a \( 2 \times 2 \) matrix.</p>
 
-<p>From this, it can be extrapolated that the order of operations &mdash; as stated above &mdash; matters. If point is to be translated by a matrix, for example, it is important that the point be the second matrix; otherwise the product would be a new matrix and not the translated point.</p>
+<p>From this, it can be extrapolated that the order of operations &mdash; as stated above &mdash; matters. If a point is to be translated by a matrix, for example, it is important that the point be the second matrix; otherwise the product would be a new matrix and not the translated point.</p>
 
 </div>
 <div class="gradient-seperator"></div>

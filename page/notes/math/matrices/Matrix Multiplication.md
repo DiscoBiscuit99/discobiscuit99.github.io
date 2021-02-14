@@ -22,7 +22,7 @@ B =
 \begin{bmatrix}
 b\_{11} & b\_{12} \\\
 b\_{21} & b\_{22} \\\
-b\_{21} & b\_{22} \\\
+b\_{31} & b\_{32} \\\
 \end{bmatrix} =
 \begin{bmatrix}
 1 & 2 \\\
@@ -31,7 +31,7 @@ b\_{21} & b\_{22} \\\
 \end{bmatrix}
 \\]
 
-Starting at the first row of the first matrix and the first column of the second, we find the dot product and continue until all combinations of the rows and columns are satisfied. Note, the order in which the dot products are found is important.
+Starting at the first row of the first matrix and the first column of the second, we find the dot product and continue until all combinations of the rows and columns are satisfied. Note, the order in which the dot products are calculated is important.
 
 \\[
 AB = C =
@@ -42,7 +42,7 @@ a\_{21} & a\_{22} & a\_{23} \\\
 \begin{bmatrix}
 \color{Dandelion}{b\_{11}} & b\_{12} \\\
 \color{Dandelion}{b\_{21}} & b\_{22} \\\
-\color{Dandelion}{b\_{21}} & b\_{22} \\\
+\color{Dandelion}{b\_{31}} & b\_{32} \\\
 \end{bmatrix}
 \\]
 
@@ -65,6 +65,8 @@ C\_{12} =
 
 \\[ \vdots \\]
 
+\\[ \Downarrow \\]
+
 \\[
 C =
 \begin{bmatrix}
@@ -75,6 +77,6 @@ C =
 
 As expected, we get a matrix consisting of the first matrix (\\( A \\)'s) rows \\( m \\) and the second matrix (\\( B \\)'s) columns \\( n \\). Matrix \\( A \\) has two rows and matrix \\( B \\) has two columns so matrix \\( C \\) therefore becomes a \\( 2 \times 2 \\) matrix.
 
-From this, it can be extrapolated that the order of operations --- as stated above --- matters. If point is to be translated by a matrix, for example, it is important that the point be the second matrix; otherwise the product would be a new matrix and not the translated point.
+From this, it can be extrapolated that the order of operations --- as stated above --- matters. If a point is to be translated by a matrix, for example, it is important that the point be the second matrix; otherwise the product would be a new matrix and not the translated point.
 
 
