@@ -134,6 +134,14 @@ Also, document procedures better.)
     </li>
 </ul>
 </div>
+<div>
+<h3>Algorithms</h3>
+<ul>
+    <li> 
+        <a href="notes/cs/algorithms/Sorting Algorithms.html">Sorting Algorithms</a> 
+    </li>
+</ul>
+</div>
 </div>
 
 ## Notes on Traditional Chinese Medicine

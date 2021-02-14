@@ -8,7 +8,7 @@
 
 ## Bits and bytes
 
-A single binary digit is called a **bit**. Because it's binary, it can either be **ON (1)** or **OFF (0)**. Eight bits make a **byte**, so a byte can go as high as `2^8 = 255`. In hex that is 0xFF. The common multiples you will see are 1 byte (0xFF), 2 bytes (0xFFFF), 4 bytes (0xFFFFFFFF), and 8 bytes (0xFFFFFFFFFFFFFFFF).
+A single binary digit is called a **bit**. Because it's binary, it can either be **ON (1)** or **OFF (0)**. Eight bits make a **byte**, so a byte can go as high as \\( 2^{8} = 255 \\). In hex that is 0xFF. The common multiples you will see are 1 byte (0xFF), 2 bytes (0xFFFF), 4 bytes (0xFFFFFFFF), and 8 bytes (0xFFFFFFFFFFFFFFFF).
 
 ## AND, OR, XOR, NOT
 
@@ -38,7 +38,9 @@ Beyond understanding how to read binary and hex, you need to know how to manipul
 ----------------     --------- 
 ```
 
-**AND** is true if both bits are true. **OR** is true if neither bit is true. **NOT** toggles the bit. **XOR** is true if only a single bit is true. In C-like languages, **AND** is often represented by the symbol `&`, **OR** is often represented by the symbol `|`, **XOR** by the symbol `^`, and **NOT** by the symbol `~`.  
+**AND** is true if both bits are true. **OR** is true if neither bit is true. **NOT** toggles the bit. **XOR** is true if only a single bit is true. In C-like languages, **AND** is often represented by the symbol `&`, **OR** is often represented by the symbol `|`, **XOR** by the symbol `^`, and **NOT** by the symbol `~`. 
+
+The mathematical notation, respectively, is \\( \land \\), \\( \lor \\), \\( \oplus \\), \\( \lnot \\).
 
 ## Bitmasking
 

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+<script src="../../../../js/scroll.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="../../../../js/MathJax-master/es5/tex-mml-chtml.js"></script> 
+<link rel="browser tab icon" href="../../../../icons/favicon.ico" type="image/x-icon"/>
+
+<link rel="stylesheet" href="../../../../css/style.css">
+<title>Sorting Algorithms</title>
+</head>
+<body>
+<div class="container">
+<div class="gradient-seperator"></div>
+<div class="div-block"> 
+  <h1>Sorting Algorithms</h1>
+
+<hr />
+
+<center>
+<p>A bunch of sorting algorithms. <a href="../../../Home.html">(~/)</a></p>
+</center>
+
+
+<h2>Insertion sort</h2>
+
+<p>The insertion sort algorithm sorts a given list essentially by splitting the list into a sorted lower sublist and a (still) unsorted upper sublist. This is done by iterating through the list and checking if the current element is less than the previous &mdash; if the current element is not the first in the list &mdash; and if so, swap them and check this new current element against its previous one and continue this way until the statement checks false. Reiterate these steps until the list is sorted.</p>
+
+<p>Example code:</p>
+
+<pre><code>fn insertion_sort(list):
+    for (e, i) in list[1..#list]:
+        let j := i-1;
+        let e_prev := list[j];
+        while e &lt; e_prev &amp; j &gt;= 0:
+            list.swap(j+1, j);
+            j--;
+            e_prev := list[j];
+</code></pre>
+
+<h2>Selection sort</h2>
+
+<h2>Bubble sort</h2>
+
+<h2>Quick sort</h2>
+
+<h2>Heap sort</h2>
+
+</div>
+<div class="gradient-seperator"></div>
+</div>
+<div class="footer">
+Valdemar Høgsvig Lorenzen &copy; 2020
+</div>
+</body>
+</html>
+  
